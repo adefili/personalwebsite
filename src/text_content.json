@@ -1,0 +1,152 @@
+{
+   "presentation":{
+      "title":{
+         "it":"Filippo Adessi",
+         "en":"Filippo Adessi"
+      },
+      "body":{
+         "it":"CIAO mi piace l'informatica e i placeholder",
+         "en":"HI i like IT and placeholders"
+      }
+   },
+   "header":{
+      "place_1":{
+         "it":"1",
+         "en":"1"
+      },
+      "place_2":{
+         "it":"2",
+         "en":"2"
+      },
+      "place_3":{
+         "it":"3",
+         "en":"3"
+      },
+      "place_4":{
+         "it":"4",
+         "en":"4"
+      }
+   },
+   "timeline":{
+      "timelineTitle":{
+         "it":"Esperienze Lavorative & Studio",
+         "en":"Job & Educational Experiences"
+      },
+      "timelineItems":[
+         {
+            "titleContent":{
+               "it":"Certificazione Databricks ....adsasd.. .asd.. ..s. ",
+               "en":"Certificazione Databricks ..asdasd.... ..asd. ..s. "
+            },
+            "paperContent":{
+               "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+               "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            },
+            "secondaryText":{
+               "it":"2020",
+               "en":"2020"
+            },
+            "buttonText":{
+               "it":"Vai alla pagina del corso",
+               "en":"Go to Course website"
+            },
+            "icon":"school"
+         },
+         {
+            "titleContent":{
+               "it":"Certificazione Databricks ...assd... ..ssss. ..ss. ",
+               "en":"Certificazione Databricks ...asdasd... .ss.. ..s. "
+            },
+            "paperContent":{
+               "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+               "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            },
+            "secondaryText":{
+               "it":"2020",
+               "en":"2020"
+            },
+            "buttonText":{
+               "it":"Vai alla pagina del corso",
+               "en":"Go to Course website"
+            },
+            "icon":"school"
+         },
+         {
+            "titleContent":{
+               "it":"Data engineer presso Bitbang SRL",
+               "en":"Data engineer in Bitbang SRL"
+            },
+            "paperContent":{
+               "it":"ho fatto questo, quello e quell'altro. Qui ho potuto fare ciò e ciò. Progetti tipo a, b e c ma anche D e F. ho lavorato er diversi clienti come a bsdas c dasd e ",
+               "en":"I DID this that them a lot of placeholder. I used this tool and others but also that. I did project like a, b, c, d. I worked for different client such"      
+            },
+            "secondaryText":{
+               "it":"2019 - presente",
+               "en":"2019 - now"
+            },
+            "buttonText":{
+               "it":"Vai al Sito",
+               "en":"Go to Website"
+            },
+            "icon":"workOutline"
+         },
+         {
+            "titleContent":{
+               "it":"Ingegneria Informatica presso Alma mater studiorum Bologna",
+               "en":"Computer Engineer in Alma Mater Studiorum Bologna"
+            },
+            "paperContent":{
+               "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+               "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            },
+            "secondaryText":{
+               "it":"2014 - 2019",
+               "en":"2014 - 2019"
+            },
+            "buttonText":{
+               "it":"Vai alla pagina del corso",
+               "en":"Go to Course website"
+            },
+            "icon":"school"
+         },
+         {
+            "titleContent":{
+               "it":"Steward Bologna",
+               "en":"Steward Bologna"
+            },
+            "paperContent":{
+               "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+               "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            },
+            "secondaryText":{
+               "it":"2017",
+               "en":"2017"
+            },
+            "buttonText":{
+               "it":"Vai alla pagina del azienda",
+               "en":"Go to company website"
+            },
+            "icon":"workOutline"
+         },
+         {
+            "titleContent":{
+               "it":"bagnino",
+               "en":"bagnino"
+            },
+            "paperContent":{
+               "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+               "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            },
+            "secondaryText":{
+               "it":"2012 & 2013",
+               "en":"2012 & 2013"
+            },
+            "buttonText":{
+               "it":"Vai alla pagina del azienda",
+               "en":"Go to company website"
+            },
+            "icon":"workOutline"
+         }
+      ]
+   }
+ }

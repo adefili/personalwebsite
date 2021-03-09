@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        { 
+            "id": "Microsoft Azure",
+            "size": 1000,
+            "renderLabel": false,
+            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
+        },
+        { 
+            "id": "Azure Data Factory",
+            "size": 500,
+            "renderLabel": false,
+            "svg": "https://symbols.getvecta.com/stencil_28/27_data-factory.c99c3eee98.svg"
+        },
+        { 
+            "id": "Databricks",
+            "size": 1000,
+            "renderLabel": false,
+            "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
+        },
+        {
+            "id": "Apache Spark",
+            "size": 1000,
+            "renderLabel": false,
+            "svg": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
+        },
+        {
+            "id": "Scala",
+            "size": 1000,
+            "renderLabel": false,
+            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/800px-Scala-full-color.svg.png"
+        }
+    ],
+    "links": [
+        {"source": "Microsoft Azure", "target": "Databricks" },
+        {"source": "Microsoft Azure", "target": "Azure Data Factory"},
+        {"source": "Databricks", "target": "Apache Spark"},
+        {"source": "Databricks", "target": "Scala"},
+        {"source": "Apache Spark", "target": "Scala"}
+    ]
+}
