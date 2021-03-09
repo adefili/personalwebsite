@@ -65,9 +65,9 @@
   background-color: whitesmoke;
   width:85%;
   max-width: 810px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 7px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 14px;
   margin-right: max(25%, 7);
   box-shadow: 5px 5px 5px grey;
 }
