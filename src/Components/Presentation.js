@@ -26,8 +26,10 @@ class Presentation extends React.Component{
                     <p>{this.state.text}</p>
                 </div>
             </div>
+            
           );
       }
 }
 
 export default Presentation;
+

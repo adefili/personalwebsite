@@ -132,14 +132,14 @@ class MyTimeline extends React.Component{
         }
 
         return (
-            <Jumbotron className="Timeline">
+            <div className="Timeline">
             <div className="jumboTitle" >{text.timeline.timelineTitle[this.state.language]}</div>
             <div className="TimelineComponent">
                 <Timeline align="left" >
                     {items}
                 </Timeline>
             </div>
-            </Jumbotron>
+            </div>
         )
     }
 }

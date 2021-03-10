@@ -66,7 +66,7 @@ class GraphVisualization extends React.Component{
         }
 
         return (   
-            <Jumbotron className="GraphVisualization">
+            <div className="GraphVisualization">
                 
                 <div className="jumboTitle">Tools and skill</div>
                 <div className="GraphMaster">
@@ -82,7 +82,7 @@ class GraphVisualization extends React.Component{
                 />
                 </div>
                 </div>
-            </Jumbotron>
+            </div>
           );
     }
 }

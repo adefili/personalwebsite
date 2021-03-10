@@ -4,6 +4,7 @@ import Presentation from './Components/Presentation';
 import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
 import MultiSelector from './Components/MultiSelector';
+import MyParticels from './Components/MyParticels';
 import React from 'react';
 
 class AllComponents extends React.Component {
@@ -27,6 +28,7 @@ class AllComponents extends React.Component {
   render() {
     return (
       <div className="WholeSite">
+        <MyParticels />
         <Presentation language={this.state.language} ref={this.presentationRef}/>
         <Header handler={this.updateLanguage} />
         <MyTimeline ref={this.timelineRef} language={this.state.language} />

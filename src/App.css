@@ -1,9 +1,22 @@
 .WholeSite{
   background-color: rgb(57, 57, 57);
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .mr-auto{
   color:blanchedalmond;
+}
+
+.jumboTitle{
+  background-color: rgb(60, 60, 60);
+  color: whitesmoke;
+  font-size: 28px;
+  display:flexbox;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
 
 .Presentation{
@@ -41,16 +54,8 @@
   overflow: auto;
   margin-top: 20px;
   margin: auto;
-  width: 90%;
+  width: 100%;
   align-items: center;
-}
-
-.jumboTitle{
-  font-size: 28px;
-  display:flexbox;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px
 }
 
 .TimelineComponent{
@@ -133,8 +138,7 @@
   display:flexbox;
   margin: auto;
   overflow: auto;
-  margin-top: 20px;
-  width: 90%;
+  width: 100%;
   align-items: center;
   text-align: center;
 }

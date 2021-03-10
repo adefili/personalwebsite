@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.d8fae313.chunk.css",
-    "main.js": "/personalwebsite/static/js/main.4200b742.chunk.js",
-    "main.js.map": "/personalwebsite/static/js/main.4200b742.chunk.js.map",
-    "runtime-main.js": "/personalwebsite/static/js/runtime-main.b06fc99a.js",
-    "runtime-main.js.map": "/personalwebsite/static/js/runtime-main.b06fc99a.js.map",
-    "static/js/2.2d2c0a86.chunk.js": "/personalwebsite/static/js/2.2d2c0a86.chunk.js",
-    "static/js/2.2d2c0a86.chunk.js.map": "/personalwebsite/static/js/2.2d2c0a86.chunk.js.map",
-    "static/js/3.fd824f41.chunk.js": "/personalwebsite/static/js/3.fd824f41.chunk.js",
-    "static/js/3.fd824f41.chunk.js.map": "/personalwebsite/static/js/3.fd824f41.chunk.js.map",
+    "main.css": "/personalwebsite/static/css/main.e3506707.chunk.css",
+    "main.js": "/personalwebsite/static/js/main.21d70451.chunk.js",
+    "main.js.map": "/personalwebsite/static/js/main.21d70451.chunk.js.map",
+    "runtime-main.js": "/personalwebsite/static/js/runtime-main.292ede13.js",
+    "runtime-main.js.map": "/personalwebsite/static/js/runtime-main.292ede13.js.map",
+    "static/js/2.46d63cc4.chunk.js": "/personalwebsite/static/js/2.46d63cc4.chunk.js",
+    "static/js/2.46d63cc4.chunk.js.map": "/personalwebsite/static/js/2.46d63cc4.chunk.js.map",
+    "static/js/3.147505d3.chunk.js": "/personalwebsite/static/js/3.147505d3.chunk.js",
+    "static/js/3.147505d3.chunk.js.map": "/personalwebsite/static/js/3.147505d3.chunk.js.map",
     "index.html": "/personalwebsite/index.html",
-    "static/css/main.d8fae313.chunk.css.map": "/personalwebsite/static/css/main.d8fae313.chunk.css.map",
-    "static/js/2.2d2c0a86.chunk.js.LICENSE.txt": "/personalwebsite/static/js/2.2d2c0a86.chunk.js.LICENSE.txt",
+    "static/css/main.e3506707.chunk.css.map": "/personalwebsite/static/css/main.e3506707.chunk.css.map",
+    "static/js/2.46d63cc4.chunk.js.LICENSE.txt": "/personalwebsite/static/js/2.46d63cc4.chunk.js.LICENSE.txt",
     "static/media/EN.fd46970f.svg": "/personalwebsite/static/media/EN.fd46970f.svg",
     "static/media/IT.3094e877.svg": "/personalwebsite/static/media/IT.3094e877.svg",
     "static/media/libreria.9675502d.jpg": "/personalwebsite/static/media/libreria.9675502d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b06fc99a.js",
-    "static/js/2.2d2c0a86.chunk.js",
-    "static/css/main.d8fae313.chunk.css",
-    "static/js/main.4200b742.chunk.js"
+    "static/js/runtime-main.292ede13.js",
+    "static/js/2.46d63cc4.chunk.js",
+    "static/css/main.e3506707.chunk.css",
+    "static/js/main.21d70451.chunk.js"
   ]
 }
