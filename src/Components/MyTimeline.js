@@ -11,7 +11,7 @@ import WorkOutline from '@material-ui/icons/WorkOutline';
 import School from '@material-ui/icons/School';
 import Typography from '@material-ui/core/Typography';
 import { Jumbotron, Button} from 'react-bootstrap';
-import text from './../text_content.json';
+import text from './../json/text_content.json';
 
 
 class NullComponent extends React.Component{
@@ -133,7 +133,7 @@ class MyTimeline extends React.Component{
 
         return (
             <Jumbotron className="Timeline">
-            <div className="timelineTitle" >{text.timeline.timelineTitle[this.state.language]}</div>
+            <div className="jumboTitle" >{text.timeline.timelineTitle[this.state.language]}</div>
             <div className="TimelineComponent">
                 <Timeline align="left" >
                     {items}

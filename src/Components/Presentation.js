@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './../Img/libreria.jpg';
-import text from './../text_content.json';
+import text from './../json/text_content.json';
 
 class Presentation extends React.Component{
 
@@ -10,8 +10,6 @@ class Presentation extends React.Component{
             title: text.presentation.title["en"],
             text: text.presentation.body["en"]
           };
-    
-
     }
 
     changeText(lan){

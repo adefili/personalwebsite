@@ -1,13 +1,32 @@
 import { Graph } from "react-d3-graph";
 import React from 'react';
 import { Jumbotron} from 'react-bootstrap';
-import graph_data from './../graph_content.json';
+import graph_data_eng from './../json/data_eng_graph_content.json';
+import graph_front_end from './../json/front_end_graph_content';
+import GraphHeader from './GraphHeader';
 
 class GraphVisualization extends React.Component{
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          graph: "data"
+        };
+        
+        this.changeGraph = this.changeGraph.bind(this);
+    }
+
+    changeGraph(e){
+        console.log(e);
+        this.setState({graph: e});
+    }
+
     render() {
+        const width = window.innerWidth * 8 / 10
+
         // the graph configuration, just override the ones you need
         const myConfig = {
+            width: width,
             nodeHighlightBehavior: true,
             staticGraph: false,
             automaticRearrangeAfterDropNode: true,
@@ -38,12 +57,22 @@ class GraphVisualization extends React.Component{
             window.alert(`Clicked link between ${source} and ${target}`);
         };
 
+        var graph_data = null;
+        if(this.state.graph == "front"){
+            graph_data = graph_front_end;
+        }
+        if(this.state.graph == "data"){
+            graph_data = graph_data_eng;
+        }
+
         return (   
             <Jumbotron className="GraphVisualization">
-
-                TITOLO
+                
+                <div className="jumboTitle">Tools and skill</div>
                 <div className="GraphMaster">
+                
                 <div className="GraphContainer">
+                <GraphHeader handler={this.changeGraph}/>
                 <Graph className="GraphContent"
                     id="graph-id"
                     data={graph_data}

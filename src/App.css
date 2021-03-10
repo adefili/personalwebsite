@@ -45,7 +45,7 @@
   align-items: center;
 }
 
-.timelineTitle{
+.jumboTitle{
   font-size: 28px;
   display:flexbox;
   font-weight: bold;
@@ -65,10 +65,9 @@
   background-color: whitesmoke;
   width:85%;
   max-width: 810px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 14px;
-  margin-right: max(25%, 7);
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 7px;
   box-shadow: 5px 5px 5px grey;
 }
 
@@ -93,7 +92,7 @@
   margin-right: 7px;
   padding-top: 15px;
   text-align: right;
-  width: max(10%, 80px);
+  width: 50px;
 }
 
 .MuiTimelineItem-missingOppositeContent:before {
@@ -150,8 +149,11 @@
 }
 
 .GraphContent{
-  background-color: purple;
+  
+}
 
+#graph-id-graph-container-zoomable{
+  background-color: purple;
 }
 
 
