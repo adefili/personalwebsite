@@ -27,13 +27,20 @@ class AllComponents extends React.Component {
 
   render() {
     return (
-      <div className="WholeSite">
-        <MyParticels />
-        <Presentation language={this.state.language} ref={this.presentationRef}/>
-        <Header handler={this.updateLanguage} />
-        <MyTimeline ref={this.timelineRef} language={this.state.language} />
-        <GraphVisualization language={this.state.language} />
-        <MultiSelector language={this.state.language}  />
+      <div className="all">
+        <MyParticels className="particelsAsBackground"></ MyParticels>
+          <div className="WholeSite">            
+          <Header handler={this.updateLanguage} />
+            <Presentation language={this.state.language} ref={this.presentationRef} />
+            <div className="paper">
+              <MyTimeline className="paper" ref={this.timelineRef} language={this.state.language} />
+            </div>
+            <div className="paper">
+              <GraphVisualization language={this.state.language} />
+            </div>
+            <MultiSelector language={this.state.language}  />
+            
+          </div>
       </div>
     );
   }

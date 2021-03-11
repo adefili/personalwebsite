@@ -25,6 +25,7 @@ class MyParticels extends React.Component {
             id="tsparticles"
             init={this.particlesInit}
             loaded={this.particlesLoaded}
+            height={window.outerHeight}
             options={{
               background: {
                 color: {
