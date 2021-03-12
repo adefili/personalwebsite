@@ -3,7 +3,7 @@ import AllComponents from './AllComponents';
 
 function App() {
     return (
-      <div className="WholeSite">
+      <div>
         <AllComponents />
       </div>
     );

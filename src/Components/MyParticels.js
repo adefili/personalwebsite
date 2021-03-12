@@ -22,6 +22,7 @@ class MyParticels extends React.Component {
       render() {
         return (
           <Particles
+            
             id="tsparticles"
             init={this.particlesInit}
             loaded={this.particlesLoaded}
@@ -81,7 +82,7 @@ class MyParticels extends React.Component {
                   enable: true,
                   outMode: "bounce",
                   random: false,
-                  speed: 2,
+                  speed: 0.75,
                   straight: false,
                 },
                 number: {

@@ -110,6 +110,10 @@ class MyTimeline extends React.Component{
         };
     }
 
+    changeTimelineText(lan){
+        this.setState({ language: lan });
+    }
+
     render() {   
         const elements = text.timeline.timelineItems;
         const items = [];

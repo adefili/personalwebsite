@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './Components/Header';
+import LanguageButton from './Components/LanguageButton';
 import Presentation from './Components/Presentation';
 import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
@@ -30,7 +30,7 @@ class AllComponents extends React.Component {
       <div className="all">
         <MyParticels className="particelsAsBackground"></ MyParticels>
           <div className="WholeSite">            
-          <Header handler={this.updateLanguage} />
+            <LanguageButton handler={this.updateLanguage} />
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <div className="paper">
               <MyTimeline className="paper" ref={this.timelineRef} language={this.state.language} />
@@ -38,8 +38,7 @@ class AllComponents extends React.Component {
             <div className="paper">
               <GraphVisualization language={this.state.language} />
             </div>
-            <MultiSelector language={this.state.language}  />
-            
+            {/*<MultiSelector language={this.state.language}  />*/}
           </div>
       </div>
     );

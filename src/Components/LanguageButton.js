@@ -3,7 +3,7 @@ import React from 'react';
 import logo_en from './../Img/EN.svg';
 import logo_it from './../Img/IT.svg';
 
-class Header extends React.Component{
+class LanguageButton extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -27,28 +27,19 @@ class Header extends React.Component{
 
     render() {
         return (
-            <div className="Header" className="sticky-top"> 
-                <Navbar variant="dark" bg="dark">
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    </Nav>
+            <div className="LanguageButton" > 
                     <Dropdown onSelect={this.changeLan}>
                             <Dropdown.Toggle variant="success" id="dropdown-basic" className="DropDown">
                             {this.state.lan} <img src={this.state.lan_logo} alt="\logo\" className="flagIcon"/>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1" eventKey="EN">EN</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2" eventKey="IT">IT</Dropdown.Item>
+                                <Dropdown.Item href="#/action-1" eventKey="EN">Eglish</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2" eventKey="IT">Italiano</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                </Navbar>
-
             </div>
           );
       }
 }
 
-export default Header;
+export default LanguageButton;
