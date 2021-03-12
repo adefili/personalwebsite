@@ -3,7 +3,7 @@ import React from 'react';
 import { Jumbotron} from 'react-bootstrap';
 import graph_data_eng from './../json/data_eng_graph_content.json';
 import graph_front_end from './../json/front_end_graph_content';
-import GraphHeader from './GraphHeader';
+import GraphMultiSelector from './GraphMultiSelector';
 
 class GraphVisualization extends React.Component{
 
@@ -70,9 +70,9 @@ class GraphVisualization extends React.Component{
                 
                 <div className="jumboTitle">Tools and skill</div>
                 <div className="GraphMaster">
-                
+                <GraphMultiSelector handler={this.changeGraph}/>
                 <div className="GraphContainer">
-                <GraphHeader handler={this.changeGraph}/>
+                
                 <Graph className="GraphContent"
                     id="graph-id"
                     data={graph_data}

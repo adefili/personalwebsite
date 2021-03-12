@@ -17,9 +17,9 @@ class GraphHeader extends React.Component{
 
     render() {
         return (
-            <div className="Header" className="sticky-top"> 
-                <Navbar variant="dark" bg="dark">
-                    <Nav className="mr-auto">
+            <div className="GraphHeader"> 
+                <Navbar>
+                    <Nav >
                         <Nav.Link onClick={() => this.changeGraphLabel("data")}>Data Eng</Nav.Link>
                         <Nav.Link onClick={() => this.changeGraphLabel("front")}>Front End</Nav.Link>
                     </Nav>

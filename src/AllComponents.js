@@ -38,7 +38,7 @@ class AllComponents extends React.Component {
             <div className="paper">
               <GraphVisualization language={this.state.language} />
             </div>
-            {/*<MultiSelector language={this.state.language}  />*/}
+
           </div>
       </div>
     );

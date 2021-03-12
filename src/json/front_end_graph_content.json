@@ -17,17 +17,10 @@
             "size": 1000,
             "renderLabel": false,
             "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
-        },
-        {
-            "id": "Apache Spark",
-            "size": 1000,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
         }
     ],
     "links": [
         {"source": "Microsoft Azure", "target": "Databricks" },
-        {"source": "Microsoft Azure", "target": "Azure Data Factory"},
-        {"source": "Databricks", "target": "Apache Spark"}
+        {"source": "Microsoft Azure", "target": "Azure Data Factory"}
     ]
 }

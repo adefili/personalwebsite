@@ -187,26 +187,38 @@
 }
 
 
-
-
-
-.GraphVisualization{
+.GraphVisualization{/*
   background-color: white;
   display:flexbox;
-  margin: auto;
+  
   overflow: auto;
-  width: 100%;
+  width: 100%;*/
+  margin: auto;
   align-items: center;
   text-align: center;
 }
 
 .GraphMaster{
-  background-color: red;
+  margin: auto;
+  width:90%;
 }
 
 .GraphContainer{
   background-color: whitesmoke;
   box-shadow: 5px 5px 5px grey;
+}
+
+.GraphMultiSelector{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+  width: fit-content;
+  color: whitesmoke;
+  background-color: rgb(58, 58, 58);
+
 }
 
 .GraphContent{
