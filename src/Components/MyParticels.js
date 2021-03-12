@@ -35,7 +35,7 @@ class MyParticels extends React.Component {
               },
               fpsLimit: 60,
               interactivity: {
-                detectsOn: "canvas",
+                detectsOn: "window",
                 events: {
                   onClick: {
                     enable: true,
@@ -43,7 +43,7 @@ class MyParticels extends React.Component {
                   },
                   onHover: {
                     enable: true,
-                    mode: "repulse",
+                    mode: "grab",
                   },
                   resize: true,
                 },
@@ -55,11 +55,14 @@ class MyParticels extends React.Component {
                     size: 40,
                   },
                   push: {
-                    quantity: 4,
+                    quantity: 1,
                   },
                   repulse: {
                     distance: 100,
                     duration: 0.4,
+                  },
+                  grab: {
+                    distance: 200,
                   },
                 },
               },
@@ -90,7 +93,7 @@ class MyParticels extends React.Component {
                     enable: true,
                     value_area: 400,
                   },
-                  value: 80,
+                  value: 100,
                 },
                 opacity: {
                   value: 0.5,
