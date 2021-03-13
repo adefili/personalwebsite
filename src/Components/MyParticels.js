@@ -22,18 +22,17 @@ class MyParticels extends React.Component {
       render() {
         return (
           <Particles
-            
             id="tsparticles"
             init={this.particlesInit}
             loaded={this.particlesLoaded}
-            height={window.outerHeight}
+            height={window.outerHeight * 1.2}
             options={{
               background: {
                 color: {
                   value: "#0d47a1",
                 },
               },
-              fpsLimit: 60,
+              fpsLimit: 45,
               interactivity: {
                 detectsOn: "window",
                 events: {
@@ -85,7 +84,7 @@ class MyParticels extends React.Component {
                   enable: true,
                   outMode: "bounce",
                   random: false,
-                  speed: 0.75,
+                  speed: 2,
                   straight: false,
                 },
                 number: {

@@ -186,13 +186,7 @@
   padding-bottom: 10px;
 }
 
-
-.GraphVisualization{/*
-  background-color: white;
-  display:flexbox;
-  
-  overflow: auto;
-  width: 100%;*/
+.GraphVisualization{
   margin: auto;
   align-items: center;
   text-align: center;
@@ -201,6 +195,7 @@
 .GraphMaster{
   margin: auto;
   width:90%;
+  
 }
 
 .GraphContainer{
@@ -218,18 +213,23 @@
   width: fit-content;
   color: whitesmoke;
   background-color: rgb(58, 58, 58);
-
 }
 
-.GraphContent{
-  
+.GraphDescription{
+  background-color: rgb(58, 58, 58);
+  color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.svg-container-graph-id{
+  width: 100%;
 }
 
 #graph-id-graph-container-zoomable{
   background-color: purple;
 }
-
-
 
 .ContenutoTemp{
   background-color: white;

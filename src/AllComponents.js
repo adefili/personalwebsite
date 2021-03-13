@@ -3,7 +3,6 @@ import LanguageButton from './Components/LanguageButton';
 import Presentation from './Components/Presentation';
 import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
-import MultiSelector from './Components/MultiSelector';
 import MyParticels from './Components/MyParticels';
 import React from 'react';
 
@@ -22,7 +21,7 @@ class AllComponents extends React.Component {
   updateLanguage(lan) {
     this.setState({ language: lan });
     this.presentationRef.current.changeText(lan);
-    this.timelineRef.current.changeTimelineText(lan);
+    this.timelineRef.current.changeLanguage(lan);
   }
 
   render() {
