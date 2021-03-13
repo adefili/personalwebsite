@@ -32,9 +32,13 @@ class GraphVisualization extends React.Component{
     }
 
     onClickNode(nodeId) {
-        window.alert(`Clicked node ${nodeId}`);
-        this.graphVisualizationRef.current.changeText("lan");
-        this.graphVisualizationRef.current.changeLanguage("lan");
+        this.graphVisualizationRef.current.changeText(nodeId);
+        this.graphVisualizationRef.current.changeLanguage(nodeId);
+    };
+
+    onClickLink(source, target) {
+        window.alert(`Clicked link between ${source} and ${target}`);
+
     };
 
     render() {
@@ -59,7 +63,7 @@ class GraphVisualization extends React.Component{
             minZoom: 0.8,
             d3: {
                 gravity: -1000,
-                linkLength: 100,
+                linkLength: 160,
             },
             node: {
               color: "lightgreen",
@@ -71,13 +75,6 @@ class GraphVisualization extends React.Component{
             },
         };
 
-
-
-        const onClickLink = function(source, target) {
-            window.alert(`Clicked link between ${source} and ${target}`);
-
-        };
-
         var graph_data = null;
         if(this.state.graph == "front"){
             graph_data = graph_front_end;
@@ -86,7 +83,8 @@ class GraphVisualization extends React.Component{
             graph_data = graph_data_eng;
         }
 
-        return (   
+        return (
+            <div className="paper">   
             <div className="GraphVisualization">
                 <div className="jumboTitle">Tools and skill</div>    
                 <div className="GraphMaster">
@@ -97,11 +95,12 @@ class GraphVisualization extends React.Component{
                             data={graph_data}
                             config={myConfig}
                             onClickNode={this.onClickNode}
-                            onClickLink={onClickLink}
+                            onClickLink={this.onClickLink}
                         />
                         <GraphDescription ref={this.graphVisualizationRef} />
                     </div>  
                 </div>
+            </div>
             </div>
         );
     }

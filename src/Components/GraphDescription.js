@@ -23,10 +23,8 @@ class GraphDescription extends React.Component{
         return (
             <div className="GraphDescription">
                 <div>
-                    {this.state.text} {this.state.text} {this.state.text}
-                    a ss sda PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER 
-                    dsa sad sPLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER 
-                    as sas s PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER 
+                    {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER
+                    {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER {this.state.text} PLACEHOLDER
                 </div>
             </div>
           );

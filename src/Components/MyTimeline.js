@@ -97,6 +97,7 @@ class MyTimeLineItem extends React.Component{
                     </div>
                 </>         
             </TimelineItem>
+            
         )
     }
 }
@@ -136,12 +137,14 @@ class MyTimeline extends React.Component{
         }
 
         return (
+            <div className="paper">
             <div className="Timeline">
             <div className="jumboTitle" >{text.timeline.timelineTitle[this.state.language]}</div>
             <div className="TimelineComponent">
                 <Timeline align="left" >
                     {items}
                 </Timeline>
+            </div>
             </div>
             </div>
         )
