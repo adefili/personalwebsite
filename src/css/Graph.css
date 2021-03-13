@@ -1,0 +1,43 @@
+.GraphVisualization{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .GraphMaster{
+    margin: auto;
+    width:90%;
+  }
+  
+  .GraphContainer{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+  .GraphMultiSelector{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+    width: fit-content;
+    color: whitesmoke;
+    background-color: rgb(58, 58, 58);
+  }
+  
+  .GraphDescription{
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .svg-container-graph-id{
+    width: 100%;
+  }
+  
+  #graph-id-graph-container-zoomable{
+    background-color: purple;
+  }

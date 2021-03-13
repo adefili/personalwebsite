@@ -1,10 +1,10 @@
-import './App.css';
 import LanguageButton from './Components/LanguageButton';
 import Presentation from './Components/Presentation';
 import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
 import MyParticels from './Components/MyParticels';
 import Language from './Components/Language';
+import TestAnimation from './Components/TestAnimation'
 import React from 'react';
 
 class AllComponents extends React.Component {
@@ -31,10 +31,12 @@ class AllComponents extends React.Component {
         <MyParticels className="particelsAsBackground"></ MyParticels>
           <div className="WholeSite">            
             <LanguageButton handler={this.updateLanguage} />
+            
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
             <GraphVisualization language={this.state.language} />
             <Language />
+            <TestAnimation />
           </div>
       </div>
     );

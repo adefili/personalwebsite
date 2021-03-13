@@ -1,0 +1,29 @@
+.LanguageButton{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  margin: 0px;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+}
+
+.DropDown{
+  height: 40px;
+  width: fit-content;
+  align-items: center;
+}
+
+.ContenutoTemp{
+  background-color: white;
+}
+
+.flagIcon{
+  height: 30px;
+  width: 30px;
+}
+
+.Language{
+  width: 90%;
+  margin: auto;
+}

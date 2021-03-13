@@ -1,0 +1,40 @@
+.Presentation{
+    background-color: rgba(140, 140, 140, 0);
+    display:flexbox;
+    overflow: auto;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom:30px;
+    margin-top:30px;
+    padding:10px;
+    align-items: center;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .PresentationImmagine {
+    height: 30%;
+    width: 30%;
+    max-width: 150px;
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-color: rgb(58, 58, 58);
+    border-style:solid;
+    border-width: 1px;
+    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .PresentationText{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: whitesmoke;
+  }
