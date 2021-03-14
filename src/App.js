@@ -5,6 +5,7 @@ import './css/Presentation.css';
 import './css/Graph.css';
 import './css/LanguageButton.css';
 import './css/Language.css';
+import './css/TestAnimation.css';
 import AllComponents from './AllComponents';
 
 function App() {

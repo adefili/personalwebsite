@@ -36,7 +36,6 @@ class AllComponents extends React.Component {
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
             <GraphVisualization language={this.state.language} />
             <Language />
-            <TestAnimation />
           </div>
       </div>
     );

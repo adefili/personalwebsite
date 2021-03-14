@@ -37,11 +37,11 @@ class MyParticels extends React.Component {
                 detectsOn: "window",
                 events: {
                   onClick: {
-                    enable: true,
+                    enable: false,
                     mode: "push",
                   },
                   onHover: {
-                    enable: true,
+                    enable: false,
                     mode: "grab",
                   },
                   resize: true,
@@ -95,14 +95,14 @@ class MyParticels extends React.Component {
                   value: 100,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0,
                 },
                 shape: {
                   type: "circle",
                 },
                 size: {
-                  random: true,
-                  value: 0,
+                  random: false,
+                  value: 3,
                 },
               },
               detectRetina: true,
