@@ -92,7 +92,7 @@ class MyParticels extends React.Component {
                     enable: true,
                     value_area: 400,
                   },
-                  value: 50,
+                  value: 40,
                 },
                 opacity: {
                   value: 1,

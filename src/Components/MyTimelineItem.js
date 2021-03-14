@@ -3,7 +3,7 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import KeyboardArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
 import { Button } from 'react-bootstrap';
 import MyTimelineSeparator from './MyTimelineSeparator';
-import { config, Spring, animated } from 'react-spring/renderprops';
+import { interpolate, Spring, animated } from 'react-spring/renderprops';
 
 class MyTimelineItem extends React.Component {
     constructor() {
@@ -11,7 +11,6 @@ class MyTimelineItem extends React.Component {
         this.state = {
             showHidePaper: false,
             block: true,
-            rotation: 0,
         };
         this.hideComponent = this.hideShowComponent.bind(this);
     }
@@ -19,14 +18,9 @@ class MyTimelineItem extends React.Component {
     hideShowComponent() {
         this.setState({ block: false });
         this.setState({ showHidePaper: !this.state.showHidePaper });
-        if (this.state.showHidePaper) this.setState({ rotation: 0 });
-        else this.setState({ rotation: 180 });
     }
 
     render() {
-        const rotate = "rotate(" + this.state.rotation + "deg)";
-        const rot = { transform: rotate };
-
         return (
             <TimelineItem className="TimelineItem">
                 <div className="TimelineOppositeItem">
@@ -35,24 +29,33 @@ class MyTimelineItem extends React.Component {
                 <MyTimelineSeparator iconName={this.props.iconName} withConnector={this.props.withConnector} />
                 <>
                     <div className="TimelinePaper">
-                        <div component="h1" className="TimelineTitleContainer" onClick={() => this.hideShowComponent()}>
+                        <div className="TimelineTitleContainer" onClick={() => this.hideShowComponent()}>
                             <div className="TimelineTitleText">
                                 {this.props.titleContent}
-                                <KeyboardArrowDownRounded style={rot} className="TimelineOpenButton" onClick={() => this.hideShowComponent()} />
+                                
                             </div>
-                        </div>
+                            <Spring 
+                            native
+                            force
+                            immediate={this.state.block}
+                            from={{rotate: this.state.showHidePaper ? 0 : 180}}
+                            to={{rotate: this.state.showHidePaper ? 180 : 0}}>
+                            {({rotate}) => 
+                                <animated.div style={{transform: interpolate([rotate], (r) => `rotate(${r}deg)`)}}>
+                                <KeyboardArrowDownRounded className="TimelineOpenButton" onClick={() => this.hideShowComponent()} />
+                                </animated.div>
+                            }
+                            </Spring>
+                        
+                            </div>
                         <Spring 
                             native
                             force
                             immediate={this.state.block}
-                            from={{
-                                height: this.state.showHidePaper ? 0 : "auto",
-                                opacity: this.state.showHidePaper ? 0 : 1,
-                            }}
-                            to={{
-                                height: this.state.showHidePaper ? "auto" : 0,
-                                opacity: this.state.showHidePaper ? 1 : 0,
-                            }}>
+                            from={{height: this.state.showHidePaper ? 0 : "auto",
+                                opacity: this.state.showHidePaper ? 0 : 1}}
+                            to={{height: this.state.showHidePaper ? "auto" : 0,
+                                opacity: this.state.showHidePaper ? 1 : 0}}>
                             {props =>
                                 <animated.div style={props} id="TimelineContentContainer">
                                     <div >
