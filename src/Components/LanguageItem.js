@@ -30,7 +30,7 @@ class LanguageItem extends React.Component{
                 <Spring
                   config={config.molasses}
                   reset={this.state.isVisible}
-                  delay={400}
+                  delay={100}
                   immediate={!this.state.isVisible}
                   from={{ number: 0 }}
                   to={{ number: this.width }}>
