@@ -14,6 +14,12 @@
     margin-bottom: 7px;
     margin-left: 7px;
     box-shadow: 5px 5px 5px grey;
+    overflow: hidden;
+  }
+
+  .TimelinePaper:hover{
+    background-color:rgba(255, 255, 255, 1);
+    box-shadow: 7px 7px 7px grey;
   }
   
   .TimelineTitleContainer{
@@ -37,6 +43,7 @@
     margin-right: 7px;
     padding-top: 15px;
     text-align: right;
+    font-size: small;
     width: 50px;
   }
   
@@ -50,21 +57,7 @@
     border-color:transparent;
   }
   
-  .TimelineOpenButton{
-    
-  }
-  
-  .TimelineTextContainer{
-    color:rgb(55, 55, 55);
-    text-align: center;
-    display:flexbox;
-    margin: auto;
-    width: 90%;
-  }
-  
   .TimelineButton{
-    text-align: center;
-    display:flexbox;
-    margin: auto;
-    padding-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
   }

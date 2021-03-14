@@ -31,7 +31,6 @@ class AllComponents extends React.Component {
         <MyParticels className="particelsAsBackground"></ MyParticels>
           <div className="WholeSite">            
             <LanguageButton handler={this.updateLanguage} />
-            
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
             <GraphVisualization language={this.state.language} />
