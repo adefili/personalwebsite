@@ -26,6 +26,13 @@ class LanguageItem extends React.Component{
             <div>
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
             <div class="grid-container">
+                <div class="LanguageA1">A1</div>
+                <div class="LanguageA2">A2</div>
+                <div class="LanguageB1">B1</div>
+                <div class="LanguageB2">B2</div>
+                <div class="LanguageC1">C1</div>
+                <div class="LanguageC2">C2</div>
+                <div class="LanguageL1">L1</div>
                 <div class="LanguageName">{this.props.name}</div>
                 <Spring
                   config={config.molasses}
@@ -37,6 +44,8 @@ class LanguageItem extends React.Component{
                   {props => <animated.div class="LanguageBar" style={{width: props.number + "%"}}></animated.div>}
                 </Spring>
                 <div class="LanguageDescription">{this.props.description}</div>
+
+                
             </div>
             </VizSensor>
             </div>

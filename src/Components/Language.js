@@ -19,7 +19,7 @@ class Language extends React.Component{
       
         for (var idx = 0; idx < 4; idx++) {
 
-            var width = (100 / 5 * ( this.getRandomInt(4) +1 )) ;
+            var width = (100 / 7 * ( this.getRandomInt(7) +1 )) ;
             var description = "With the continuous improvement of information technology and increasing numbers of Web resources, the mode of English reading teaching has changed fundamentally, and the diversity and flexibility of English reading materials achieve a great progress. Because English reading materials were hand-election"
             var name = "English Reading"
 
