@@ -10,8 +10,12 @@
   }
   
   .GraphContainer{
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255, 0.5);
     box-shadow: 5px 5px 5px grey;
+  }
+
+  .GraphContainer:hover{
+    background-color: rgb(255, 255, 255, 0.6);
   }
   
   .GraphMultiSelector{
@@ -23,11 +27,11 @@
     margin: 0px;
     width: fit-content;
     color: whitesmoke;
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(58, 58, 58, 1);
   }
   
   .GraphDescription{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(58, 58, 58, 0.9);
     color: whitesmoke;
     width: 100%;
     padding: 10px;

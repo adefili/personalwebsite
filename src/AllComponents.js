@@ -4,6 +4,7 @@ import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
 import MyParticels from './Components/MyParticels';
 import Language from './Components/Language';
+import Sport from './Components/Sport';
 import TestAnimation from './Components/TestAnimation'
 import React from 'react';
 
@@ -35,6 +36,7 @@ class AllComponents extends React.Component {
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
             <GraphVisualization language={this.state.language} />
             <Language />
+            <Sport />
           </div>
       </div>
     );

@@ -70,10 +70,8 @@ class MyTimelineItem extends React.Component {
                             }
                         </Spring>
                     </div>
-
                 </>
             </TimelineItem>
-
         )
     }
 }

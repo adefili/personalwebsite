@@ -2,8 +2,9 @@ import React from 'react';
 import {config, Spring} from 'react-spring/renderprops';
 import VizSensor from 'react-visibility-sensor';
 import {animated} from 'react-spring/renderprops'
+import logo from './../Img/libreria.jpg';
 
-class LanguageItem extends React.Component{
+class SportItem extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -25,27 +26,10 @@ class LanguageItem extends React.Component{
         return (  
             <div>
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
-            <div class="LanguageGridContainer">
-                <div class="LanguageA1">A1</div>
-                <div class="LanguageA2">A2</div>
-                <div class="LanguageB1">B1</div>
-                <div class="LanguageB2">B2</div>
-                <div class="LanguageC1">C1</div>
-                <div class="LanguageC2">C2</div>
-                <div class="LanguageL1">L1</div>
-                <div class="LanguageName">{this.props.name}</div>
-                <Spring
-                  config={config.molasses}
-                  reset={this.state.isVisible}
-                  delay={100}
-                  immediate={!this.state.isVisible}
-                  from={{ number: 0 }}
-                  to={{ number: this.width }}>
-                  {props => <animated.div class="LanguageBar" style={{width: props.number + "%"}}></animated.div>}
-                </Spring>
-                <div class="LanguageDescription">{this.props.description}</div>
-
-                
+            <div class="Sport-grid-container">
+                <img src={logo} alt="IMG" class="SportImage" />
+                <div class="SportName">{this.props.name}</div>
+                <div class="SportDescription">{this.props.description}</div> 
             </div>
             </VizSensor>
             </div>
@@ -53,7 +37,7 @@ class LanguageItem extends React.Component{
     }
 }
 
-export default LanguageItem;
+export default SportItem;
 
 /*
                   immediate={this.state.stop}
