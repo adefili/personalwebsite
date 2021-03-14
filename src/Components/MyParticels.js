@@ -32,7 +32,7 @@ class MyParticels extends React.Component {
                   value: "#0d47a1",
                 },
               },
-              fpsLimit: 45,
+              fpsLimit: 30,
               interactivity: {
                 detectsOn: "window",
                 events: {
@@ -71,13 +71,13 @@ class MyParticels extends React.Component {
                 },
                 links: {
                   color: "#ffffff",
-                  distance: 150,
+                  distance: 200,
                   enable: true,
-                  opacity: 0.5,
+                  opacity: 1,
                   width: 1,
                 },
                 collisions: {
-                  enable: true,
+                  enable: false,
                 },
                 move: {
                   direction: "none",
@@ -92,17 +92,17 @@ class MyParticels extends React.Component {
                     enable: true,
                     value_area: 400,
                   },
-                  value: 100,
+                  value: 50,
                 },
                 opacity: {
-                  value: 0,
+                  value: 1,
                 },
                 shape: {
                   type: "circle",
                 },
                 size: {
                   random: false,
-                  value: 3,
+                  value: 0,
                 },
               },
               detectRetina: true,
