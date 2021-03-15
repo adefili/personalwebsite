@@ -26,7 +26,6 @@ class TestAnimation extends React.Component{
                     <p>{this.state.showHidePaper + ""}</p>
                     <Button onClick={() => this.hideShowComponent()}>ANIMATE</Button>
                     <Spring
-                        reset={!this.state.imgViz}
                         from={{ 
                             height: this.state.showHidePaper ? 0 : "auto",
                             "font-size": this.state.showHidePaper ? 0 : 100

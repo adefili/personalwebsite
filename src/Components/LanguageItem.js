@@ -25,28 +25,28 @@ class LanguageItem extends React.Component{
         return (  
             <div>
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
-            <div class="LanguageGridContainer">
-                <div class="LanguageA1">A1</div>
-                <div class="LanguageA2">A2</div>
-                <div class="LanguageB1">B1</div>
-                <div class="LanguageB2">B2</div>
-                <div class="LanguageC1">C1</div>
-                <div class="LanguageC2">C2</div>
-                <div class="LanguageL1">L1</div>
-                <div class="LanguageName">{this.props.name}</div>
                 <Spring
                   config={config.molasses}
-                  reset={this.state.isVisible}
-                  delay={100}
-                  immediate={!this.state.isVisible}
-                  from={{ number: 0 }}
-                  to={{ number: this.width }}>
-                  {props => <animated.div class="LanguageBar" style={{width: props.number + "%"}}></animated.div>}
-                </Spring>
-                <div class="LanguageDescription">{this.props.description}</div>
+                  delay={300}
+                  from={{opacity: 0, width: 0}}
+                  to={{opacity: this.state.isVisible ? 1 : 0, width: this.state.isVisible ? this.width : 0}}>
+                  {props => (
+                <div class="LanguageGridContainer">
+                  <animated.div class="LanguageBar" style={{width: props.width + "%", opacity: props.opacity}}></animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageDescription" >{this.props.description}</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageA1">A1</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageA2">A2</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageB1">B1</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageB2">B2</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageC1">C1</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageC2">C2</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageL1">L1</animated.div>
+                  <animated.div style={{opacity: props.opacity}} class="LanguageName">{this.props.name}</animated.div>
+                  </div>
+                  )}
+                  </Spring>
 
                 
-            </div>
             </VizSensor>
             </div>
         );
