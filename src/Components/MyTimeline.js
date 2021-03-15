@@ -2,6 +2,8 @@ import React from 'react';
 import Timeline from '@material-ui/lab/Timeline';
 import MyTimelineItem from './MyTimelineItem';
 import text from './../json/text_content.json';
+import { config, animated, Spring} from 'react-spring/renderprops'
+
 
 
 class MyTimeline extends React.Component{
@@ -28,14 +30,15 @@ class MyTimeline extends React.Component{
             }
 
             items.push(
-                <MyTimelineItem index={index}
-                                selected_index={this.state.selected_index}
-                                titleContent={elements[index].titleContent[this.state.language]}
-                                paperContent={elements[index].paperContent[this.state.language]}
-                                secondaryText={elements[index].secondaryText[this.state.language]}
-                                buttonContent={elements[index].buttonText[this.state.language]}
-                                iconName={elements[index].icon}
-                                withConnector={separator}/>)
+                    <MyTimelineItem index={index}
+                                    selected_index={this.state.selected_index}
+                                    titleContent={elements[index].titleContent[this.state.language]}
+                                    paperContent={elements[index].paperContent[this.state.language]}
+                                    secondaryText={elements[index].secondaryText[this.state.language]}
+                                    buttonContent={elements[index].buttonText[this.state.language]}
+                                    iconName={elements[index].icon}
+                                    withConnector={separator}/>
+                )
         }
 
         return (
