@@ -13,12 +13,14 @@ class Sport extends React.Component{
         var description = "CIAO"
         for (var idx = 0; idx < 4; idx++) {
 
-            description = "sport fantastico bellissimo sport fantastico bellissimo" + description
+            description = "sport fantastico bellissimo sport fantastico bellissimo" + description + description
             var name = "Sport Name"
+            var date = "2019"
 
             items.push(
                 <SportItem description={description}
-                           name={name}/>)
+                           name={name}
+                           date={date}/>)
         }
 
         return (
