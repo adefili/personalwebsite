@@ -6,6 +6,7 @@ import MyParticels from './Components/MyParticels';
 import Language from './Components/Language';
 import Sport from './Components/Sport';
 import TestAnimation from './Components/TestAnimation'
+import Project from './Components/Project';
 import React from 'react';
 
 class AllComponents extends React.Component {
@@ -35,6 +36,7 @@ class AllComponents extends React.Component {
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
             <GraphVisualization language={this.state.language} />
+            <Project />
             <Language />
             <Sport />
           </div>

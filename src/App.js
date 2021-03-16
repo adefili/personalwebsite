@@ -7,6 +7,7 @@ import './css/LanguageButton.css';
 import './css/Language.css';
 import './css/TestAnimation.css';
 import './css/Sport.css';
+import './css/Project.css';
 import AllComponents from './AllComponents';
 
 function App() {
