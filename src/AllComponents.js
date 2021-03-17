@@ -24,7 +24,7 @@ class AllComponents extends React.Component {
   updateLanguage(lan) {
     this.setState({ language: lan });
     this.presentationRef.current.changeText(lan);
-    this.timelineRef.current.changeLanguage(lan);
+    //this.timelineRef.current.changeLanguage(lan);
   }
 
   render() {

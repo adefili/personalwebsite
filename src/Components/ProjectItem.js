@@ -43,9 +43,11 @@ class ProjectItem extends React.Component{
                 force
                 immediate={this.state.block}
                 from={{height: this.state.showHidePaper ? 0 : "auto",
-                    opacity: this.state.showHidePaper ? 0 : 1}}
+                    opacity: this.state.showHidePaper ? 0 : 1,
+                    margin: this.state.showHidePaper ? "0px" : "10px"}}
                 to={{height: this.state.showHidePaper ? "auto" : 0,
-                    opacity: this.state.showHidePaper ? 1 : 0}}>
+                    opacity: this.state.showHidePaper ? 1 : 0,
+                    margin: this.state.showHidePaper ? "10px" : "0px"}}>
                 {props =>
                 <animated.div style={props} class="ProjectDescription">{this.props.description}</animated.div>
             }

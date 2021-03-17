@@ -30,12 +30,17 @@ class MyTimelineItem extends React.Component {
         this.setState({ showHidePaper: !this.state.showHidePaper });
     }
 
+    goToWebsite(){
+        console.log(this.props.link);
+        return;
+    }
+
     render() {
         return (
             <Spring
             config={{ tension: 280, friction: 200 }}
             delay={0}
-            from={{opacity: 0}}
+            from={{opacity: 1}}
             to={{opacity: this.state.isVisible ? 1 : 0}}>
             {props => (
                 <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
@@ -78,11 +83,11 @@ class MyTimelineItem extends React.Component {
                                 <animated.div style={props} id="TimelineContentContainer">
                                     <div >
                                         <div onClick={() => this.hideShowComponent()} style={{ "padding-left": "5%", "padding-right": "5%" }}>
-                                            {this.props.paperContent} {this.props.paperContent} {this.props.paperContent} {this.props.paperContent} {this.props.paperContent} {this.props.paperContent}
+                                            {this.props.paperContent}
                                         </div>
                                     </div>
                                     <div className="TimelineButton">
-                                        <Button >{this.props.buttonContent} </Button>
+                                        <Button href={this.props.link} target="_blank">{this.props.buttonContent} </Button>
                                     </div>
                                 </animated.div>
                             }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Timeline from '@material-ui/lab/Timeline';
 import MyTimelineItem from './MyTimelineItem';
-import text from './../json/text_content.json';
+import text from './../json/timeline_content.json';
 import { config, animated, Spring} from 'react-spring/renderprops'
 
 
@@ -20,7 +20,7 @@ class MyTimeline extends React.Component{
     }
 
     render() {   
-        const elements = text.timeline.timelineItems;
+        const elements = text.timelineItems;
         const items = [];
       
         for (const [index] of elements.entries()) {
@@ -36,6 +36,7 @@ class MyTimeline extends React.Component{
                                     paperContent={elements[index].paperContent[this.state.language]}
                                     secondaryText={elements[index].secondaryText[this.state.language]}
                                     buttonContent={elements[index].buttonText[this.state.language]}
+                                    link={elements[index].link}
                                     iconName={elements[index].icon}
                                     withConnector={separator}/>
                 )
@@ -44,7 +45,7 @@ class MyTimeline extends React.Component{
         return (
             <div className="paper">
             <div className="Timeline">
-            <div className="jumboTitle" >{text.timeline.timelineTitle[this.state.language]}</div>
+            <div className="jumboTitle" >{text.timelineTitle[this.state.language]}</div>
             <div className="TimelineComponent">
                 <Timeline align="left" >
                     {items}

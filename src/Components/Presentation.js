@@ -1,29 +1,70 @@
 import React from 'react';
 import logo from './../Img/libreria.jpg';
-import text from './../json/text_content.json';
+import text from './../json/presentation_content.json';
+import {Spring, animated, config} from 'react-spring/renderprops';
 
 class Presentation extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {
-            title: text.presentation.title["en"],
-            text: text.presentation.body["en"]
+            title: text.title["en"],
+            title_salutation: text.title_salutation["en"],
+            title_other: text.title_other["en"],
+            text: text.body["en"]
           };
     }
 
     changeText(lan){
-        this.setState({ title: text.presentation.title[lan] });
-        this.setState({ text: text.presentation.body[lan] });
+        this.setState({ title: text.title[lan] });
+        this.setState({ text: text.body[lan] });
+        this.setState({ title_salutation: text.title_salutation[lan] });
+        this.setState({ title_other: text.title_other[lan] });
     }
 
     render() {
         return (
             <div className="Presentation"> 
-                <img src={logo} alt="Logo" className="PresentationImmagine"/>
                 <div className="PresentationText">
-                    <h1>{this.state.title}</h1>
+                <img src={logo} alt="Logo" className="PresentationImmagine"/>
+                <Spring 
+                native force
+                config={{mass: 100, tension: 170, friction: 100, clamp: false, velocity: 0}}
+                delay={100}
+                from={{opacity: 0}}
+                to={{opacity: 1}}> 
+                {props =>
+                <animated.div style={props}>
+                    <h1 style={{"font-size": "50px"}}>{this.state.title_salutation}</h1>
+                </animated.div>
+                }
+                </Spring>
+                <Spring 
+                native force
+                config={{mass: 50, tension: 170, friction: 100, clamp: false, velocity: 0}}
+                delay={1000}
+                from={{opacity: 0}}
+                to={{opacity: 1}}> 
+                {props =>
+                <animated.div style={props}>
+                    <h1 style={{"font-size": "30px"}}>{this.state.title_other}</h1>
+                </animated.div>
+                }
+                </Spring>
+                <Spring 
+                native force
+                config={{mass: 100, tension: 170, friction: 50, clamp: false, velocity: 0}}
+                delay={1800}
+                from={{opacity: 0}}
+                to={{opacity: 1}}> 
+                {props =>
+                <animated.div style={props}>
                     <p>{this.state.text}</p>
+                    
+                    </animated.div>
+                }
+                </Spring>
+                
                 </div>
             </div>
             

@@ -1,0 +1,126 @@
+{
+   "timelineTitle":{
+      "it":"Esperienze Lavorative & Studio",
+      "en":"Job & Educational Experiences"
+   },
+   "timelineItems":[
+      {
+         "titleContent":{
+            "it":"Data engineer presso Bitbang SRL",
+            "en":"Data engineer in Bitbang SRL"
+         },
+         "paperContent":{
+            "it":"ho fatto questo, quello e quell'altro. Qui ho potuto fare ciò e ciò. Progetti tipo a, b e c ma anche D e F. ho lavorato er diversi clienti come a bsdas c dasd e ",
+            "en":"I DID this that them a lot of placeholder. I used this tool and others but also that. I did project like a, b, c, d. I worked for different client such"      
+         },
+         "secondaryText":{
+            "it":"2019 - presente",
+            "en":"2019 - now"
+         },
+         "buttonText":{
+            "it":"Vai al Sito Aziendale",
+            "en":"Go to Company Website"
+         },
+         "link": "https://www.bitbang.com/",
+         "icon":"workOutline"
+      },
+      {
+         "titleContent":{
+            "it":"Generazione di previsioni di inventario affidabili con Databricks - Formazione virtuale",
+            "en":"Generating Reliable Inventory Forecasts with Databricks - Virtual Training"
+         },
+         "paperContent":{
+            "it":"Questo corso mi ha insegnato come eseguire previsioni dettagliate della domanda su larga scala con Facebook Prophet e Apache Spark. Dopo una spiegazione teorica ho messo in pratica le tecniche che consentono di produrre previsioni di serie temporali efficienti e accurate su una scala più fine rispetto all'utilizzo di tecniche tradizionali.",
+            "en":"This course taught me how to perform detailed large-scale demand forecasting with Facebook Prophet and Apache Spark. After a theoretical explanation I have put into practice the techniques that allow to produce efficient and accurate time series predictions on a finer scale than using traditional techniques."      
+         },
+         "secondaryText":{
+            "it":"2020",
+            "en":"2020"
+         },
+         "buttonText":{
+            "it":"Vai a Databricks Academy",
+            "en":"Go to Databricks Academy"
+         },
+         "icon":"school",
+         "link":"https://academy.databricks.com/"
+      },
+      {
+         "titleContent":{
+            "it":"Certificazione Databricks assds sss ss. ",
+            "en":"Certificazione Databricks asdasd gdfss "
+         },
+         "paperContent":{
+            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+         },
+         "secondaryText":{
+            "it":"2020",
+            "en":"2020"
+         },
+         "buttonText":{
+            "it":"Vai a Databricks Academy",
+            "en":"Go to Databricks Academy"
+         },
+         "icon":"school",
+         "link":"https://academy.databricks.com/"
+      },
+      {
+         "titleContent":{
+            "it":"Ingegneria Informatica presso Alma mater studiorum Bologna",
+            "en":"Computer Engineer in Alma Mater Studiorum Bologna"
+         },
+         "paperContent":{
+            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+         },
+         "secondaryText":{
+            "it":"2014 - 2019",
+            "en":"2014 - 2019"
+         },
+         "buttonText":{
+            "it":"Vai alla pagina del corso",
+            "en":"Go to Course website"
+         },
+         "icon":"school"
+      },
+      {
+         "titleContent":{
+            "it":"Steward Bologna",
+            "en":"Steward Bologna"
+         },
+         "paperContent":{
+            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+         },
+         "secondaryText":{
+            "it":"2017",
+            "en":"2017"
+         },
+         "buttonText":{
+            "it":"Vai alla pagina del azienda",
+            "en":"Go to company website"
+         },
+         "icon":"workOutline"
+      },
+      {
+         "titleContent":{
+            "it":"bagnino",
+            "en":"bagnino"
+         },
+         "paperContent":{
+            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
+            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+         },
+         "secondaryText":{
+            "it":"2012 & 2013",
+            "en":"2012 & 2013"
+         },
+         "buttonText":{
+            "it":"Vai alla pagina del azienda",
+            "en":"Go to company website"
+         },
+         "icon":"workOutline"
+      }
+   ]
+
+ }
