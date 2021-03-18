@@ -6,8 +6,8 @@
    "timelineItems":[
       {
          "titleContent":{
-            "it":"Data engineer presso Bitbang SRL",
-            "en":"Data engineer in Bitbang SRL"
+            "it":"Data engineer - Bitbang SRL",
+            "en":"Data engineer - Bitbang SRL"
          },
          "paperContent":{
             "it":"ho fatto questo, quello e quell'altro. Qui ho potuto fare ciò e ciò. Progetti tipo a, b e c ma anche D e F. ho lavorato er diversi clienti come a bsdas c dasd e ",
@@ -21,8 +21,11 @@
             "it":"Vai al Sito Aziendale",
             "en":"Go to Company Website"
          },
-         "link": "https://www.bitbang.com/",
-         "icon":"workOutline"
+         "icon":"workOutline",
+         "link": {
+            "it":"https://www.bitbang.com/",
+            "en":"https://www.bitbang.com/"
+         }
       },
       {
          "titleContent":{
@@ -30,48 +33,54 @@
             "en":"Generating Reliable Inventory Forecasts with Databricks - Virtual Training"
          },
          "paperContent":{
-            "it":"Questo corso mi ha insegnato come eseguire previsioni dettagliate della domanda su larga scala con Facebook Prophet e Apache Spark. Dopo una spiegazione teorica ho messo in pratica le tecniche che consentono di produrre previsioni di serie temporali efficienti e accurate su una scala più fine rispetto all'utilizzo di tecniche tradizionali.",
-            "en":"This course taught me how to perform detailed large-scale demand forecasting with Facebook Prophet and Apache Spark. After a theoretical explanation I have put into practice the techniques that allow to produce efficient and accurate time series predictions on a finer scale than using traditional techniques."      
+            "it":"Questo corso insegna come eseguire previsioni dettagliate della domanda su larga scala con Facebook Prophet e Apache Spark. Dopo una spiegazione teorica ho messo in pratica le tecniche che consentono di produrre previsioni di serie temporali efficienti e accurate su una scala più fine rispetto all'utilizzo di tecniche tradizionali.",
+            "en":"This course teaches  how to perform detailed large-scale demand forecasting with Facebook Prophet and Apache Spark. After a theoretical explanation I have put into practice the techniques that allow to produce efficient and accurate time series predictions on a finer scale than using traditional techniques."      
          },
          "secondaryText":{
             "it":"2020",
             "en":"2020"
          },
          "buttonText":{
-            "it":"Vai a Databricks Academy",
-            "en":"Go to Databricks Academy"
+            "it":"Vai alla Certificazione",
+            "en":"Go to Certification"
          },
          "icon":"school",
-         "link":"https://academy.databricks.com/"
+         "link":{
+            "it":"https://academy.databricks.com/award/completion/740c125e-dd2a-3af9-b2c0-5ffcb6b9e342/view-ext",
+            "en":"https://academy.databricks.com/award/completion/740c125e-dd2a-3af9-b2c0-5ffcb6b9e342/view-ext"
+         }
       },
       {
          "titleContent":{
-            "it":"Certificazione Databricks assds sss ss. ",
-            "en":"Certificazione Databricks asdasd gdfss "
+            "it":"Azure Databricks Core Technical - Formazione virtuale e Certificazione",
+            "en":"Azure Databricks Core Technical - Virtual Training and Capstone"
          },
          "paperContent":{
-            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
-            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            "it":"La formazione tecnica di base di Azure Databricks è un'esperienza pratica di 3 giorni di persona che fornisce i concetti chiave, le abilità pratiche e la conoscenza tecnica di Azure Databricks.",
+            "en":"Azure Databricks Core Technical Training is a 3 day, hands-on, in person experience that provide the key concepts, practical skills, and technical knowledge of Azure Databricks."      
          },
          "secondaryText":{
             "it":"2020",
             "en":"2020"
          },
          "buttonText":{
-            "it":"Vai a Databricks Academy",
-            "en":"Go to Databricks Academy"
+            "it":"Vai alla Certificazione",
+            "en":"Go to Certification"
          },
          "icon":"school",
-         "link":"https://academy.databricks.com/"
+         "link":{
+            "it":"https://academy.databricks.com/award/certification/a7132a7b-1bed-36c4-9248-9debd5c3cb31/view-ext",
+            "en":"https://academy.databricks.com/award/certification/a7132a7b-1bed-36c4-9248-9debd5c3cb31/view-ext"
+         }
       },
       {
          "titleContent":{
-            "it":"Ingegneria Informatica presso Alma mater studiorum Bologna",
-            "en":"Computer Engineer in Alma Mater Studiorum Bologna"
+            "it":"Laurea in Ingegneria Informatica - Alma mater studiorum Bologna",
+            "en":"Bachelor in Computer Engineering - Alma Mater Studiorum Bologna"
          },
          "paperContent":{
-            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
-            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            "it":"<p>Il corso presta particolare attenzione ai principi fondazionali, all'esemplificazione degli approcci metodologici, alla presentazione degli ambienti e degli strumenti al fine di avere<span style='font-weight:bold;'> una visione:</span></p><div style='font-weight:bold;'>sistemistica </div><div style='font-weight:bold;'>sulla progettazione del software </div><div style='font-weight:bold;'>dei sistemi operativi </div><div style='font-weight:bold;'>dei sistemi informativi </div><div style='font-weight:bold;'>delle reti di calcolatori </div><div style='font-weight:bold;'>delle infrastrutture WEB </div><div style='font-weight:bold;'>delle architetture computazionali</div></br><p> Le competenze specifiche nel settore sono integrate da solide <span style='font-weight:bold;'>basi fisico-matematiche</span>, da approfondite conoscenze interdisciplinari riguardanti aree tematiche quali <span style='font-weight:bold;'>l'Ingegneria Elettronica</span> e <span style='font-weight:bold;'>l'Ingegneria delle Telecomunicazioni</span>, da elementi di cultura aziendale e da adeguate conoscenze di lingua straniera.</p>",
+            "en":"<p>The course pays particular attention to the founding principles, to the exemplification of methodological approaches, to the presentation of environments and tools in order to have<span style='font-weight:bold;'> a vision about:</span></p><div style = 'font-weight: bold;'> systems engineering </div><div style = 'font-weight: bold;'> software design </div><div style = 'font-weight: bold;'> operating systems </div><div style = 'font-weight: bold;'> information systems </div><div style = 'font-weight: bold;'> computer networks </div><div style = 'font-weight: bold;'> WEB infrastructure </div><div style = 'font-weight: bold;'> computational architectures </div></br><p> The specific skills in the sector are complemented by solid <span style = 'font-weight: bold;'> physical-mathematical bases </span>, by in-depth interdisciplinary knowledge concerning thematic areas such as <span style = 'font-weight : bold; '> Electronic Engineering </span> and <span style =' font-weight: bold; '> Telecommunications Engineering </span>, from elements of corporate culture and adequate knowledge of a foreign language. </p>"      
          },
          "secondaryText":{
             "it":"2014 - 2019",
@@ -81,45 +90,57 @@
             "it":"Vai alla pagina del corso",
             "en":"Go to Course website"
          },
-         "icon":"school"
+         "icon":"school",
+         "link":{
+            "it": "https://corsi.unibo.it/laurea/IngegneriaInformatica/insegnamenti/piano?code=0926&year=2015&manifest=it_2015_0926_000_000_3",
+            "en": "https://corsi.unibo.it/1cycle/ComputerEngineering/course-structure-diagram/piano?code=0926&year=2014&manifest=en_2014_0926_000_000_3"            
+         }
       },
       {
          "titleContent":{
-            "it":"Steward Bologna",
-            "en":"Steward Bologna"
+            "it":"Steward - Best Union SpA ora VIVATICKET",
+            "en":"Stadium Steward - Best Union SpA now VIVATICKET"
          },
          "paperContent":{
-            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
-            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            "it":"<p>Per circa un anno ho lavorato come steward nel weekend. Dopo aver effettuato un corso professionale, ho lavorato negli stadi dell'emilia-romagna. I mie compiti erano:</p><div>Garantire la sicurezza del pubblico e dei giocatori</div><div>Assistere e Accoglienre il pubblico</div><div>Gestire folle di persone</div><div>Segnalare comportamenti pericolosi</div><div>Effettuare controlli a campione</div>",
+            "en":"<p> For about a year I worked in the weekend as steward. After completing a professional course, I worked in the stadiums of Emilia-Romagna.</p><p>My duties were: </p><div> Ensuring the safety of the public and players </div><div> Attending and welcoming the public </div><div> Dealing with crowds of people </div><div> Report dangerous behavior </div><div> Carry out random checks </div>"      
          },
          "secondaryText":{
-            "it":"2017",
-            "en":"2017"
+            "it":"2016 - 2017",
+            "en":"2016 - 2017"
          },
          "buttonText":{
-            "it":"Vai alla pagina del azienda",
+            "it":"Vai alla pagina aziendale",
             "en":"Go to company website"
          },
-         "icon":"workOutline"
+         "icon":"workOutline",
+         "link":{
+            "it": "https://corporate.vivaticket.com/it/company/about-us",
+            "en": "https://corporate.vivaticket.com/en/company/about-us"
+         }
       },
       {
          "titleContent":{
-            "it":"bagnino",
-            "en":"bagnino"
+            "it":"Bagnino di salvataggio - La Compagnia Del Mare",
+            "en":"Lifeguard - La Compagnia Del Mare"
          },
          "paperContent":{
-            "it":"Ho studiato matematica, fisica, C, Java, C#, SQL, Prolog... e tanto altro come asd asd asd asd asd asd asd",
-            "en":"I studied math, C, Java, SQL, prolog and did a lot of thigs such"      
+            "it":"<p>Per due estati ho lavorato come bagnino 7 giorni su 7 mediamente 6 ore al giorno. Dopo aver seguito un corso professionale dove ho studiato le ordinanze, le tecniche di salvataggio in acqua e le tecniche di primo soccorso e dopo aver conseguito il brevetto della Società Nazionale di Salvamento ho iniziato a lavorare presso gli hotel GH Montesilvano & Grand Eurhotel (sia piscina che mare) e presso la spiaggia libera di città Sant'Angelo.</p><p>I mie compiti erano:</p><div>prevenire gli incidenti in acqua o farvi fronte</div><div>regolare le attività di balneazione ed il comportamento degli utenti</div><div>applicare e far rispettare le ordinanze (Capitaneria di Porto e Guardia Costiera)</div><div>verificare periodicamente la chimica delle acque nelle piscine</div>",
+            "en":"<p> For two summers I worked as a lifeguard 7 days a week on average 6 hours a day. After following a professional course where I studied ordinances, water rescue techniques and first aid techniques and after obtaining the patent of the National Salvation Society I started working at the GH Montesilvano & Grand Eurhotel (both swimming pool che mare) and at the free beach of Città Sant'Angelo. </p><p> My duties were: </p><div> prevent or cope with water accidents </div><div> regulate bathing activities and user behavior </div><div> apply and enforce the ordinances (Port Authority and Coast Guard) </div><div> periodically check the water chemistry in swimming pools </div>"      
          },
          "secondaryText":{
-            "it":"2012 & 2013",
-            "en":"2012 & 2013"
+            "it":"2012-2013",
+            "en":"2012-2013"
          },
          "buttonText":{
-            "it":"Vai alla pagina del azienda",
-            "en":"Go to company website"
+            "it":"Vai alla pagina della cooperativa",
+            "en":"Go to cooperative website"
          },
-         "icon":"workOutline"
+         "icon":"workOutline",
+         "link":{
+            "it": "https://www.lacompagniadelmareitalia.com/",
+            "en": "https://www.lacompagniadelmareitalia.com/"
+         }
       }
    ]
 

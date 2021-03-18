@@ -82,8 +82,7 @@ class MyTimelineItem extends React.Component {
                             {props =>
                                 <animated.div style={props} id="TimelineContentContainer">
                                     <div >
-                                        <div onClick={() => this.hideShowComponent()} style={{ "padding-left": "5%", "padding-right": "5%" }}>
-                                            {this.props.paperContent}
+                                        <div onClick={() => this.hideShowComponent()} style={{ "padding-left": "5%", "padding-right": "5%" }} dangerouslySetInnerHTML={{ __html: this.props.paperContent }}>
                                         </div>
                                     </div>
                                     <div className="TimelineButton">

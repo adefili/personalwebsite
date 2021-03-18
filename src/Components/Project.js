@@ -16,10 +16,10 @@ class Project extends React.Component{
 
         for (var idx = 0; idx < 4; idx++) {
 
-            description = "Progetto fantastico con tanti dettagli " + description + description
+            description = "Progetto fantastico con tanti dettagli " + description + description;
             name = "Project Name project " + name;
             var date = "2019";
-            tags = "react " + tags + tags
+            tags = "react " + tags + tags;
 
             items.push(
                 <ProjectItem description={description}

@@ -15,7 +15,7 @@ class MyTimeline extends React.Component{
         };
     }
 
-    changeTimelineText(lan){
+    changeText(lan){
         this.setState({ language: lan });
     }
 
@@ -28,7 +28,6 @@ class MyTimeline extends React.Component{
             if(index === elements.length - 1){
                 separator = "false";
             }
-
             items.push(
                     <MyTimelineItem index={index}
                                     selected_index={this.state.selected_index}
@@ -36,7 +35,7 @@ class MyTimeline extends React.Component{
                                     paperContent={elements[index].paperContent[this.state.language]}
                                     secondaryText={elements[index].secondaryText[this.state.language]}
                                     buttonContent={elements[index].buttonText[this.state.language]}
-                                    link={elements[index].link}
+                                    link={elements[index].link[this.state.language]}
                                     iconName={elements[index].icon}
                                     withConnector={separator}/>
                 )
