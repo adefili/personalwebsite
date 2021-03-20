@@ -121,6 +121,29 @@
       },
       {
          "titleContent":{
+            "it":"Liceo Scientifico Sperimentale - Corradino D'ascanio montesilvano (PE)",
+            "en":"Experimental Scientific High School - Corradino D'ascanio montesilvano (PE)"
+         },
+         "paperContent":{
+            "it":"Rispetto al liceo scientifico tradizionale il corso che ho fatto prevedeva ore settimanali aggiuntive e ore di latino ridotte in modo tale che Biologia e Chimica fossero insegnate per 8 ore la settimana. Oltre queste 3 materie ho studiato matematica, fisica, fisica-chimica, scienze della terra, italiano, inglese, storia e filosofia.",
+            "en":"Compared to the traditional scientific high school, the course I did included additional weekly hours and reduced hours of Latin so that Biology and Chemistry were taught for 8 hours a week. Besides these 3 subjects I studied mathematics, physics, physics-chemistry, earth sciences, Italian, English, history and philosophy."      
+         },
+         "secondaryText":{
+            "it":"2009-2014",
+            "en":"2009-2014"
+         },
+         "buttonText":{
+            "it":"Vai alla sito della Scuola",
+            "en":"Go to Highschool website"
+         },
+         "icon":"school",
+         "link":{
+            "it": "http://www.liceodascanio.edu.it/pvw/app/PELS0007/pvw_sito.php",
+            "en": "http://www.liceodascanio.edu.it/pvw/app/PELS0007/pvw_sito.php"
+         }
+      },
+      {
+         "titleContent":{
             "it":"Bagnino di salvataggio - La Compagnia Del Mare",
             "en":"Lifeguard - La Compagnia Del Mare"
          },
@@ -129,8 +152,8 @@
             "en":"<p> For two summers I worked as a lifeguard 7 days a week on average 6 hours a day. After following a professional course where I studied ordinances, water rescue techniques and first aid techniques and after obtaining the patent of the National Salvation Society I started working at the GH Montesilvano & Grand Eurhotel (both swimming pool che mare) and at the free beach of Città Sant'Angelo. </p><p> My duties were: </p><div> prevent or cope with water accidents </div><div> regulate bathing activities and user behavior </div><div> apply and enforce the ordinances (Port Authority and Coast Guard) </div><div> periodically check the water chemistry in swimming pools </div>"      
          },
          "secondaryText":{
-            "it":"2012-2013",
-            "en":"2012-2013"
+            "it":"2013-2014",
+            "en":"2013-2014"
          },
          "buttonText":{
             "it":"Vai alla pagina della cooperativa",

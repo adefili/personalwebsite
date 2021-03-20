@@ -53,21 +53,21 @@ class GraphVisualization extends React.Component{
         // the graph configuration, just override the ones you need
         const myConfig = {
             width: width,
+            height: 600,
             nodeHighlightBehavior: true,
             staticGraph: false,
-            automaticRearrangeAfterDropNode: true,
             highlightDegree: 2,
             highlightOpacity: 0.3,
             initialZoom: 0.8,
-            maxZoom: 0.8,
-            minZoom: 0.8,
+            maxZoom: 0.7,
+            minZoom: 0.7,
             d3: {
-                gravity: -1000,
-                linkLength: 160,
+                gravity: -1500,
+                linkLength: 130,
             },
             node: {
               color: "lightgreen",
-              size: 120,
+              size: 1000,
               highlightStrokeColor: "blue",
             },
             link: {

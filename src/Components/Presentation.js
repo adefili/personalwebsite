@@ -35,7 +35,7 @@ class Presentation extends React.Component{
                 to={{opacity: 1}}> 
                 {props =>
                 <animated.div style={props}>
-                    <h1 style={{"font-size": "50px"}}>{this.state.title_salutation}</h1>
+                    <span style={{"font-size": "50px"}}>{this.state.title_salutation}</span>
                 </animated.div>
                 }
                 </Spring>
@@ -47,7 +47,7 @@ class Presentation extends React.Component{
                 to={{opacity: 1}}> 
                 {props =>
                 <animated.div style={props}>
-                    <h1 style={{"font-size": "30px"}}>{this.state.title_other}</h1>
+                    <span style={{"font-size": "30px"}}>{this.state.title_other}</span>
                 </animated.div>
                 }
                 </Spring>
