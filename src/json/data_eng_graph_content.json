@@ -4,6 +4,8 @@
             "id": "Microsoft Azure",
             "size": 2000,
             "renderLabel": false,
+            "cx": -200,
+            "cy": 0,
             "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
         },
         { 
@@ -16,8 +18,8 @@
             "id": "Databricks",
             "size": 1700,
             "renderLabel": false,
-            "cx": 22,
-            "cy": 22,
+            "cx": 0,
+            "cy": 0,
             "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
         },
         {
@@ -48,6 +50,8 @@
             "id": "Python",
             "size": 800,
             "renderLabel": false,
+            "cx": 0,
+            "cy": 150,
             "svg": "https://lh3.googleusercontent.com/proxy/mN04GIlIIYsCRuu3MABUvsp2oJ3RDd0ICleHJrAolZhBYg-JJTWV9ukkVF6Gg4TdBH448l7lV44XlylhmO2IzKr4hc1RaXA2VpL66SV4tSXEkgooqhI"
         },
         {
@@ -110,7 +114,6 @@
         {"source": "Apache Spark", "target": "Scala"},
         {"source": "Databricks", "target": "Delta Lake"},
         {"source": "Python", "target": "Pandas"},
-        {"source": "Keras", "target": "Xgboost"},
         {"source": "Scala", "target": "Git"}
     ]
 }

@@ -58,9 +58,9 @@ class GraphVisualization extends React.Component{
             staticGraph: false,
             highlightDegree: 2,
             highlightOpacity: 0.3,
-            initialZoom: 0.8,
-            maxZoom: 0.7,
-            minZoom: 0.7,
+            initialZoom: 0.7,
+            maxZoom: 1,
+            minZoom: 0.5,
             d3: {
                 gravity: -1500,
                 linkLength: 130,
