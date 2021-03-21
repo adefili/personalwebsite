@@ -1,26 +1,63 @@
 {
-    "nodes": [
-        { 
-            "id": "Microsoft Azure",
-            "size": 1000,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
-        },
-        { 
-            "id": "Azure Data Factory",
-            "size": 500,
-            "renderLabel": false,
-            "svg": "https://symbols.getvecta.com/stencil_28/27_data-factory.c99c3eee98.svg"
-        },
-        { 
-            "id": "Databricks",
-            "size": 1000,
-            "renderLabel": false,
-            "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
-        }
-    ],
-    "links": [
-        {"source": "Microsoft Azure", "target": "Databricks" },
-        {"source": "Microsoft Azure", "target": "Azure Data Factory"}
-    ]
+    "description": {
+        "it": "<div class='mySubTitle'>Sviluppo Front End</div><div>Sia per il corso universitario facoltativo di Tecnologie Web sia nel tempo libero ho realizzato alcuni progetti di Frontend. Questo sito per esempio è stato realizzato in <span class='spanBolder'>React</span>, ho realizzato altri siti per esercitarmi con <span class='spanBolder'>javascript</span> e <span class='spanBolder'>html5</span> e ho realizzato un sito con <span class='spanBolder'>Wordpress</span> andando a modificare un template in <span class='spanBolder'>PHP</span>. Per l'università ho imparato ad utilizzare <span class='spanBolder'>J-boss, Java Servlet, Java Server Pages, DOM & SAX Parser per XML, Ajax, javascript, JDBC, Hibernate</span> e <span class='spanBolder'>pattern DAO</span>.</div>",
+        "en": "<div class='mySubTitle'>Front End Development</div><div>For the optional university course in Web Technologies and in my free time I have created some Frontend projects. This site for example was created in <span class='spanBolder'>React</span> with few dependecies, I created other sites to practice with <span class='spanBolder'>javascript</span> and <span class='spanBolder'>html5</span> and I created a site with <span class='spanBolder'>Wordpress</span> going to modify a template in <span class='spanBolder'>PHP</span>. For university I learned how to use <span class='spanBolder'>J-boss, Java Servlet, Java Server Pages, DOM & SAX Parser for XML, Ajax, javascript, JDBC, Hibernate</span> and <span class='spanBolder'>DAO pattern</span>.</div>"
+    },
+    "title": {
+        "it": "Strumenti, linguaggi e Tecnologie infomatiche",
+        "en": "IT Tools, languages and Technologies"
+    },
+    "graph": {
+        "nodes": [
+            { 
+                "id": "JS",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://static.html.it/app/uploads/2016/01/javascript_logo-1.png"
+            },
+            { 
+                "id": "React",
+                "size": 1500,
+                "renderLabel": false,
+                "svg": "https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/react-js-blog-header.png?itok=VbfDeSgJ"
+            },
+            {
+                "id": "HTML",
+                "size": 700,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+            },
+            {
+                "id": "CSS",
+                "size": 700,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+            },
+            {
+                "id": "JSP servlet",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/89734226/original/c9504630247a5443a526989205f073ddf8c6699b/create-jsp-servlet-webpages.png"
+            },
+            {
+                "id": "Wordpress",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://www.multiplicalia.com/wp-content/uploads/2018/01/wordpress.png"
+            },
+            {
+                "id": "Hibernate",
+                "size": 1500,
+                "renderLabel": false,
+                "svg": "https://hibernate.org/images/hibernate-logo.svg"
+            }
+        ],
+        "links": [
+            {"source": "JS", "target": "React" },
+            {"source": "HTML", "target": "JS" },
+            {"source": "HTML", "target": "CSS" },
+            {"source": "HTML", "target": "JSP servlet" },
+            {"source": "Hibernate", "target": "JSP servlet" }
+        ]
+    }
 }

@@ -18,6 +18,7 @@ class AllComponents extends React.Component {
     };
     this.presentationRef = React.createRef()
     this.timelineRef = React.createRef()
+    this.graphRef = React.createRef()
     this.updateLanguage = this.updateLanguage.bind(this);
   }
 
@@ -25,6 +26,7 @@ class AllComponents extends React.Component {
     this.setState({ language: lan });
     this.presentationRef.current.changeText(lan);
     this.timelineRef.current.changeText(lan);
+    this.graphRef.current.changeText(lan);
   }
 
   render() {
@@ -35,7 +37,7 @@ class AllComponents extends React.Component {
             <LanguageButton handler={this.updateLanguage} />
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
-            <GraphVisualization language={this.state.language} />
+            <GraphVisualization ref={this.graphRef} language={this.state.language} />
             <Project />
             <Language />
             <Sport />

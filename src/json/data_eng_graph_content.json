@@ -1,119 +1,157 @@
 {
-    "nodes": [
-        { 
-            "id": "Microsoft Azure",
-            "size": 2000,
-            "renderLabel": false,
-            "cx": -200,
-            "cy": 0,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
-        },
-        { 
-            "id": "Azure Data Factory",
-            "size": 800,
-            "renderLabel": false,
-            "svg": "https://symbols.getvecta.com/stencil_28/27_data-factory.c99c3eee98.svg"
-        },
-        { 
-            "id": "Databricks",
-            "size": 1700,
-            "renderLabel": false,
-            "cx": 0,
-            "cy": 0,
-            "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
-        },
-        {
-            "id": "Apache Spark",
-            "size": 1500,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
-        },
-        {
-            "id": "Scala",
-            "size": 1500,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/800px-Scala-full-color.svg.png"
-        },
-        {
-            "id": "Synapse",
-            "size": 900,
-            "renderLabel": false,
-            "svg": "https://www.matillion.com/wp-content/uploads/2020/04/Azure_Synapse_Logo_HOR_BLK-1.png"
-        },
-        {
-            "id": "SQL",
-            "size": 900,
-            "renderLabel": false,
-            "svg": "https://miro.medium.com/max/787/1*IYEvbY1IRNoXRTuAIWpERQ.png"
-        },
-        {
-            "id": "Python",
-            "size": 800,
-            "renderLabel": false,
-            "cx": 0,
-            "cy": 150,
-            "svg": "https://lh3.googleusercontent.com/proxy/mN04GIlIIYsCRuu3MABUvsp2oJ3RDd0ICleHJrAolZhBYg-JJTWV9ukkVF6Gg4TdBH448l7lV44XlylhmO2IzKr4hc1RaXA2VpL66SV4tSXEkgooqhI"
-        },
-        {
-            "id": "Delta Lake",
-            "size": 800,
-            "renderLabel": false,
-            "svg": "https://dbdb.io/media/logos/delta-lake.png"
-        },
-        {
-            "id": "Tensor Flow",
-            "size": 900,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/1200px-TensorFlowLogo.svg.png"
-        },
-        {
-            "id": "Keras",
-            "size": 1000,
-            "renderLabel": false,
-            "svg": "https://keras.io/img/logo.png"
-        },
-        {
-            "id": "Pandas",
-            "size": 1000,
-            "renderLabel": false,
-            "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png"
-        },
-        {
-            "id": "Xgboost",
-            "size": 1400,
-            "renderLabel": false,
-            "svg": "https://miro.medium.com/max/720/1*yhE3CBwTrlXcAIvNJNTQiA.png"
-        },
-        {
-            "id": "Logic App",
-            "size": 1200,
-            "renderLabel": false,
-            "svg": "https://wakeupandcode.com/wp-content/uploads/2019/08/azure-logic-apps400x200.png"
-        },
-        {
-            "id": "Git",
-            "size": 800,
-            "renderLabel": false,
-            "svg": "https://www.stefanoteodorani.it/git-checkout-for-specific-subfolder/git-checkout-for-specific-subfolder.png"
-        }
-    ],
-    "links": [
-        {"source": "Databricks", "target": "Microsoft Azure" },
-        {"source": "Microsoft Azure", "target": "Azure Data Factory"},
-        {"source": "Microsoft Azure", "target": "Logic App"},
-        {"source": "Microsoft Azure", "target": "Synapse"},
-        {"source": "Synapse", "target": "Azure Data Factory"},
-        {"source": "SQL", "target": "Synapse"},
-        {"source": "SQL", "target": "Databricks"},
-        {"source": "Databricks", "target": "Apache Spark"},
-        {"source": "Databricks", "target": "Scala"},
-        {"source": "Python", "target": "Databricks"},
-        {"source": "Python", "target": "Tensor Flow"},
-        {"source": "Python", "target": "Keras"},
-        {"source": "Python", "target": "Xgboost"},
-        {"source": "Apache Spark", "target": "Scala"},
-        {"source": "Databricks", "target": "Delta Lake"},
-        {"source": "Python", "target": "Pandas"},
-        {"source": "Scala", "target": "Git"}
-    ]
+    "description": {
+        "it": "<div class='mySubTitle'>ingestion dei dati da fonti esterne verso datalake</div><div>Utilizzando <span class='spanBolder'>Azure Data Factory</span> o <span class='spanBolder'>Azure Synapse Studio</span> creo flussi di dati automatizzati capaci di convogliare i dati presenti su più piattaforme esterne di un cliente (DB, SQL server, AWS, SAP...) in un unico <span class='spanBolder'>datalake</span> con logiche personalizzate che dipendono dal tipo di sorgente, dalla quantità di dati e dalle tempestiche richieste per la presnetazione dei dati elaborati.</div></br><div class='mySubTitle'>trasformazione, pulizia e aggregazione dei dati</div><div>partendo dai dati grezzi sul dalake, elimino o correggo i dati inconsistenti, trasformo, aggrego ed automatizzo i dati in tabelle capaci di portare conoscenza. Le elaborazioni vengono realizzate principalmente utilizzando <span class='spanBolder'>Apache Spark</span> all'interno di <span class='spanBolder'>Databricks</span> utilizzando <span class='spanBolder'>Scala</span> come linguaggio ma anche utilizzando <span class='spanBolder'>Python</span>, <span class='spanBolder'>Azure Data Flow</span> o <span class='spanBolder'>SQL</span> in base alle esigenze progettuali. I dati elaborati vengono poi utilizzati per Analisi, Dashboarding, da applicazioni enterprise o custom</div></br><div class='mySubTitle'>Altri Progetti</div><div>Inoltre ho svolto progetti dove ho automatizzato e standardizzato l'inserimento di dati in template html, dove ho usato <span class='spanBolder'>Power BI</span> e dove ho realizzato delle semplici API utilizzando <span class='spanBolder'>Azure Functions</span> e i linguaggi <span class='spanBolder'>C#</span> e <span class='spanBolder'>Python</span> per portare i dati elaborati ad applicazioni o siti internet.</div></br><div class='mySubTitle'>Studio Personale e AI</div><div>Oltre le attività lavorative ho utilizzato per centinaia di ore la piattaforma <span class='spanBolder'>Kaggle</span> dove ho seguito corsi e partecipato ad alcune competizioni sul IA. In particolare ho realizzato degli algoritmi di <span class='spanBolder'>Machine Learning</span>, <span class='spanBolder'>Natural Language Processing</span>, <span class='spanBolder'>Deep Learning</span>, <span class='spanBolder'>Transfer Learning</span> e attualmente di <span class='spanBolder'>Reinforcment Learning</span>.</div>",
+        "en": "<div class='mySubTitle'> Data Ingestion Ingestion from external sources to datalake </div> <div> Using <span class = 'spanBolder'> Azure Data Factory </span> or <span class = 'spanBolder'> Azure Synapse Studio </span> I create automated data flows capable of conveying data present on multiple external platforms of a customer (DB, SQL server, AWS, SAP ...) in a single <span class = 'spanBolder'> datalake </span> with customized logics that depend on the type of source, the amount of data and the timely requests for the presentation of the processed data. </div></br> <div class = 'mySubTitle'> Data transformation, cleaning and aggregation</div><div>Starting from the raw data on the dalake, I delete or correct the inconsistent data, transform, aggregate and automate the data in tables capable of bringing knowledge. Processing is mainly done using <span class='spanBolder'>Apache Spark </span> within <span class='spanBolder'>Databricks</span> using <span class='spanBolder'>Scala</span> as a language but also using <span class='spanBolder'>Python</span>, <span class='spanBolder'>Azure Data Flow</span> or <span class = 'spanBolder'> SQL </span> based on design needs. The processed data is then used for Analysis, Dashboarding, by enterprise or custom applications </div> </br> <div class = 'mySubTitle'> Other Projects </div> <div> Furthermore I have carried out projects where I have automated and standardized inserting data into html templates, where I used <span class = 'spanBolder'> Power BI </span> and where I created some simple APIs using <span class = 'spanBolder'> Azure Functions </span> and the languages <span class = 'spanBolder'> C # </span> and <span class = 'spanBolder'> Python </span> to bring the processed data to applications or websites. </div></br><div class='mySubTitle'> Personal Study and AI </div> <div> Besides working activities, I used the <span class = 'spanBolder'> Kaggle </span> platform for hundreds of hours, where I attended courses and participated in some competitions on IA. In particular I have developed algorithms of <span class = 'spanBolder'> Machine Learning </span>, <span class='spanBolder'> Natural Language Processing </span>, <span class='spanBolder'>Deep Learning</span>, <span class='spanBolder'>Transfer Learning</span> and currently <span class='spanBolder'>Reinforcment Learning </span>.</div>"
+    },
+    "title": {
+        "it": "Strumenti, linguaggi e Tecnologie infomatiche",
+        "en": "IT Tools, languages and Technologies"
+    },
+    "graph": {
+        "nodes": [
+            { 
+                "id": "Microsoft Azure",
+                "size": 1500,
+                "renderLabel": false,
+                "cx": -200,
+                "cy": 0,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/1280px-Microsoft_Azure_Logo.svg.png"
+            },
+            { 
+                "id": "Azure Data Factory",
+                "size": 500,
+                "renderLabel": false,
+                "svg": "https://symbols.getvecta.com/stencil_28/27_data-factory.c99c3eee98.svg"
+            },
+            { 
+                "id": "Databricks",
+                "size": 1300,
+                "renderLabel": false,
+                "cx": 0,
+                "cy": 0,
+                "svg": "https://i.pinimg.com/originals/05/8a/16/058a16cd476728f2780b761f77575cdf.png"
+            },
+            {
+                "id": "Apache Spark",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg"
+            },
+            {
+                "id": "Scala",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/800px-Scala-full-color.svg.png"
+            },
+            {
+                "id": "Synapse",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://www.matillion.com/wp-content/uploads/2020/04/Azure_Synapse_Logo_HOR_BLK-1.png"
+            },
+            {
+                "id": "SQL",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/787/1*IYEvbY1IRNoXRTuAIWpERQ.png"
+            },
+            {
+                "id": "Python",
+                "size": 1400,
+                "renderLabel": false,
+                "cx": 0,
+                "cy": 150,
+                "svg": "https://i.pinimg.com/originals/82/b2/3a/82b23a37bc438fc8808e1f707e0a0bc5.png"
+            },
+            {
+                "id": "Delta Lake",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://dbdb.io/media/logos/delta-lake.png"
+            },
+            {
+                "id": "Tensor Flow",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/1200px-TensorFlowLogo.svg.png"
+            },
+            {
+                "id": "Keras",
+                "size": 1000,
+                "renderLabel": false,
+                "svg": "https://keras.io/img/logo.png"
+            },
+            {
+                "id": "Pandas",
+                "size": 1000,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png"
+            },
+            {
+                "id": "Xgboost",
+                "size": 1400,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/720/1*yhE3CBwTrlXcAIvNJNTQiA.png"
+            },
+            {
+                "id": "Logic App",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://wakeupandcode.com/wp-content/uploads/2019/08/azure-logic-apps400x200.png"
+            },
+            {
+                "id": "Git",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://www.stefanoteodorani.it/git-checkout-for-specific-subfolder/git-checkout-for-specific-subfolder.png"
+            },
+            {
+                "id": "Azure Dev Ops",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://i2.wp.com/www.inflectra.com/Images/Logos/Microsoft-Azure-DevOps.png?resize=246%2C140&ssl=1"
+            },
+            {
+                "id": "Kaggle",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+            },
+            {
+                "id": "Azure Functions",
+                "size": 1300,
+                "renderLabel": false,
+                "svg": "https://jsreport.net/img/azure-functions.png"
+            },
+            {
+                "id": "Jupyter",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png"
+            }
+        ],
+        "links": [
+            {"source": "Databricks", "target": "Microsoft Azure" },
+            {"source": "Microsoft Azure", "target": "Azure Data Factory"},
+            {"source": "Microsoft Azure", "target": "Logic App"},
+            {"source": "Microsoft Azure", "target": "Synapse"},
+            {"source": "Microsoft Azure", "target": "Azure Functions"},
+            {"source": "Synapse", "target": "Azure Data Factory"},
+            {"source": "SQL", "target": "Synapse"},
+            {"source": "SQL", "target": "Databricks"},
+            {"source": "Databricks", "target": "Apache Spark"},
+            {"source": "Databricks", "target": "Scala"},
+            {"source": "Python", "target": "Databricks"},
+            {"source": "Python", "target": "Tensor Flow"},
+            {"source": "Python", "target": "Keras"},
+            {"source": "Python", "target": "Xgboost"},
+            {"source": "Python", "target": "Kaggle"},
+            {"source": "Python", "target": "Jupyter"},
+            {"source": "Apache Spark", "target": "Scala"},
+            {"source": "Databricks", "target": "Delta Lake"},
+            {"source": "Python", "target": "Pandas"},
+            {"source": "Scala", "target": "Git"},
+            {"source": "Microsoft Azure", "target": "Azure Dev Ops"}
+        ]
+    }
 }

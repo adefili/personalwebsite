@@ -3,6 +3,9 @@ import React from 'react';
 import { Jumbotron} from 'react-bootstrap';
 import graph_data_eng from './../json/data_eng_graph_content.json';
 import graph_front_end from './../json/front_end_graph_content';
+import graph_accademic from './../json/accademic_graph_content';
+import graph_productivity from './../json/productivity_graph_content';
+import graph_other from './../json/productivity_graph_content';
 import GraphMultiSelector from './GraphMultiSelector';
 import GraphDescription from './GraphDescription';
 
@@ -12,34 +15,38 @@ class GraphVisualization extends React.Component{
         super(props);
         this.state = {
           graph: "data",
-          width: window.innerWidth
+          width: window.innerWidth,
+          language: "en"
         };
         this.graphVisualizationRef = React.createRef()
         this.changeGraph = this.changeGraph.bind(this);
         this.handleResize = this.handleResize.bind(this);
-        this.onClickNode = this.onClickNode.bind(this);
+        //this.onClickNode = this.onClickNode.bind(this);
+        this.changeText = this.changeText.bind(this);
         window.addEventListener('resize', this.handleResize);
     }
 
+    changeText(e){
+        this.setState({language: e});
+    }
+
     changeGraph(e){
-        console.log(e);
         this.setState({graph: e});
     }
 
     handleResize(e){
-        console.log("ciao");
         this.setState({width: window.innerWidth});
     }
 
-    onClickNode(nodeId) {
-        this.graphVisualizationRef.current.changeText(nodeId);
-        this.graphVisualizationRef.current.changeLanguage(nodeId);
-    };
+    //onClickNode(nodeId) {
+    //    this.graphVisualizationRef.current.changeText(nodeId);
+    //    this.graphVisualizationRef.current.changeLanguage(nodeId);
+    //};
 
-    onClickLink(source, target) {
-        window.alert(`Clicked link between ${source} and ${target}`);
-
-    };
+    //onClickLink(source, target) {
+    //    window.alert(`Clicked link between ${source} and ${target}`);
+//
+    //};
 
     render() {
         var width = 100;
@@ -53,7 +60,7 @@ class GraphVisualization extends React.Component{
         // the graph configuration, just override the ones you need
         const myConfig = {
             width: width,
-            height: 600,
+            height: 350,
             nodeHighlightBehavior: true,
             staticGraph: false,
             highlightDegree: 2,
@@ -76,28 +83,28 @@ class GraphVisualization extends React.Component{
         };
 
         var graph_data = null;
-        if(this.state.graph == "front"){
-            graph_data = graph_front_end;
-        }
-        if(this.state.graph == "data"){
-            graph_data = graph_data_eng;
-        }
+        if(this.state.graph == "front") {graph_data = graph_front_end;        }
+        if(this.state.graph == "data") graph_data = graph_data_eng;
+        if(this.state.graph == "accademic") graph_data = graph_accademic;
+        if(this.state.graph == "productivity") graph_data = graph_productivity;
+        if(this.state.graph == "other") graph_data = graph_other;
 
         return (
             <div className="paper">   
             <div className="GraphVisualization">
-                <div className="jumboTitle">Tools and skill</div>    
+                <div className="jumboTitle">{graph_data.title[this.state.language]}</div>    
                 <div className="GraphMaster">
-                    <GraphMultiSelector handler={this.changeGraph}/>
+                    
                     <div className="GraphContainer">
                         <Graph className="GraphContent"
                             id="graph-id"
-                            data={graph_data}
+                            data={graph_data.graph}
                             config={myConfig}
-                            onClickNode={this.onClickNode}
-                            onClickLink={this.onClickLink}
+                            //onClickNode={this.onClickNode}
+                            //onClickLink={this.onClickLink}
                         />
-                        <GraphDescription ref={this.graphVisualizationRef} />
+                        <GraphMultiSelector handler={this.changeGraph}/>
+                        <GraphDescription description={graph_data.description[this.state.language]} />
                     </div>  
                 </div>
             </div>

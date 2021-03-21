@@ -27,17 +27,17 @@ class Presentation extends React.Component{
             <div className="Presentation"> 
                 <div className="PresentationText">
                 <img src={logo} alt="Logo" className="PresentationImmagine"/>
-                <Spring 
+                {/*<Spring 
                 native force
                 config={{mass: 100, tension: 170, friction: 100, clamp: false, velocity: 0}}
                 delay={100}
                 from={{opacity: 0}}
                 to={{opacity: 1}}> 
-                {props =>
-                <animated.div style={props}>
+                {props =>*/}
+                <animated.div /*style={props}*/>
                     <span style={{"font-size": "50px"}}>{this.state.title_salutation}</span>
                 </animated.div>
-                }
+                {/*}
                 </Spring>
                 <Spring 
                 native force
@@ -45,11 +45,11 @@ class Presentation extends React.Component{
                 delay={1000}
                 from={{opacity: 0}}
                 to={{opacity: 1}}> 
-                {props =>
-                <animated.div style={props}>
+                {props => */}
+                <animated.div /*style={props}*/>
                     <span style={{"font-size": "30px"}}>{this.state.title_other}</span>
                 </animated.div>
-                }
+                {/*}
                 </Spring>
                 <Spring 
                 native force
@@ -57,13 +57,13 @@ class Presentation extends React.Component{
                 delay={1800}
                 from={{opacity: 0}}
                 to={{opacity: 1}}> 
-                {props =>
-                <animated.div style={props}>
+                {props => }*/}
+                <animated.div /*style={props}*/>
                     <p>{this.state.text}</p>
                     
                     </animated.div>
-                }
-                </Spring>
+                {/*}
+                </Spring>*/}
                 
                 </div>
             </div>

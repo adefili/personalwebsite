@@ -1,0 +1,29 @@
+{
+    "description": {
+        "it": "ciao",
+        "en": "hi"
+    },
+    "title": {
+        "it": "Strumenti, linguaggi e Tecnologie infomatiche",
+        "en": "IT Tools, languages and Technologies"
+    },
+    "graph": {
+        "nodes": [
+            { 
+                "id": "JS",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://static.html.it/app/uploads/2016/01/javascript_logo-1.png"
+            },
+            { 
+                "id": "React",
+                "size": 1500,
+                "renderLabel": false,
+                "svg": "https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/react-js-blog-header.png?itok=VbfDeSgJ"
+            }
+        ],
+        "links": [
+            {"source": "JS", "target": "React" }
+        ]
+    }
+}

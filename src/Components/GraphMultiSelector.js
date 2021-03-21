@@ -5,10 +5,14 @@ class GraphMultiSelector extends React.Component{
     constructor() {
         super();
         this.state = {
+            language: "en",
             radioValue: 0,
             radios: [
-                { name: 'Data Engineer', short:"data", value: 0},
-                { name: 'Front End', short:"front", value: 1},
+                { name: 'Data Engineering', short:"data", radio_idx: 0},
+                { name: 'Front End', short:"front", radio_idx: 1},
+                { name: 'Accademic', short:"accademic", radio_idx: 2},
+                { name: 'Productivity', short:"productivity", radio_idx: 3},
+                { name: 'Other', short:"other", radio_idx: 4}
               ]
         };
     } 
@@ -30,8 +34,8 @@ class GraphMultiSelector extends React.Component{
                             type="radio"
                             variant="secondary"
                             name="radio"
-                            value={radio.value}
-                            checked={this.state.radioValue === radio.value}
+                            value={radio.radio_idx}
+                            checked={this.state.radioValue === radio.radio_idx}
                             onChange={(e) => this.setRadioValue(e.currentTarget.value)}
                         >
                             {radio.name}
