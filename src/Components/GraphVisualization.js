@@ -32,6 +32,7 @@ class GraphVisualization extends React.Component{
 
     changeGraph(e){
         this.setState({graph: e});
+        console.log(document.getElementsByClassName("GraphContent"));
     }
 
     handleResize(e){
@@ -60,7 +61,7 @@ class GraphVisualization extends React.Component{
         // the graph configuration, just override the ones you need
         const myConfig = {
             width: width,
-            height: 350,
+            height: 500,
             nodeHighlightBehavior: true,
             staticGraph: false,
             highlightDegree: 2,
@@ -69,8 +70,10 @@ class GraphVisualization extends React.Component{
             maxZoom: 1,
             minZoom: 0.5,
             d3: {
-                gravity: -1500,
-                linkLength: 130,
+                alphaTarget: 0,
+                gravity: -700,
+                linkLength: 100,
+                linkStrength: 1,
             },
             node: {
               color: "lightgreen",

@@ -10,20 +10,55 @@
     "graph": {
         "nodes": [
             { 
+                "id": "Java",
+                "size": 1100,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/8642/1*iIXOmGDzrtTJmdwbn7cGMw.png"
+            },
+            { 
+                "id": "C",
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://www.britefish.net/wp-content/uploads/2019/07/logo-c-1.png"
+            },
+            { 
+                "id": "Prolog",
+                "size": 1000,
+                "renderLabel": false,
+                "svg": "https://eu.swi-prolog.org/icons/swipl.png"
+            },
+            { 
+                "id": "C#",
+                "size": 1500,
+                "renderLabel": false,
+                "svg": "https://www.avenga.com/wp-content/uploads/2020/11/C-Sharp.png"
+            },
+            { 
+                "id": "Assembler",
+                "size": 800,
+                "renderLabel": false,
+                "svg": "https://assets.exercism.io/tracks/x86-64-assembly-hex-turquoise.png"
+            },
+            {
                 "id": "JS",
                 "size": 800,
                 "renderLabel": false,
                 "svg": "https://static.html.it/app/uploads/2016/01/javascript_logo-1.png"
             },
-            { 
-                "id": "React",
-                "size": 1500,
+            {
+                "id": "SQL",
+                "size": 900,
                 "renderLabel": false,
-                "svg": "https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/react-js-blog-header.png?itok=VbfDeSgJ"
+                "svg": "https://miro.medium.com/max/787/1*IYEvbY1IRNoXRTuAIWpERQ.png"
             }
+
         ],
         "links": [
-            {"source": "JS", "target": "React" }
+            {"source": "C", "target": "Java" },
+            {"source": "JS", "target": "Java" },
+            {"source": "C", "target": "Assembler" },
+            {"source": "Java", "target": "C#" },
+            {"source": "C", "target": "Prolog" }
         ]
     }
 }

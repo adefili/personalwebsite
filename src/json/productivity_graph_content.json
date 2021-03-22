@@ -10,20 +10,92 @@
     "graph": {
         "nodes": [
             { 
-                "id": "JS",
+                "id": "sublime",
                 "size": 800,
-                "renderLabel": false,
-                "svg": "https://static.html.it/app/uploads/2016/01/javascript_logo-1.png"
+                "renderLabel": true,
+                "svg": ""
             },
             { 
-                "id": "React",
-                "size": 1500,
-                "renderLabel": false,
-                "svg": "https://www.metaltoad.com/sites/default/files/styles/large_personal_photo_870x500_/public/2020-05/react-js-blog-header.png?itok=VbfDeSgJ"
+                "id": "intellij idea",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "visual studio code",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "notepad++",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "microsoft 365",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "google suite",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "onedrive",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "sharepoint",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "google drive",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "microsoft teams",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "zoom",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "keypass",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "plan.io",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
+            },
+            { 
+                "id": "virtual box",
+                "size": 800,
+                "renderLabel": true,
+                "svg": ""
             }
         ],
         "links": [
-            {"source": "JS", "target": "React" }
+            {"source": "keypass", "target": "plan.io" }
         ]
     }
 }
