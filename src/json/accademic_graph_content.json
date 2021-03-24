@@ -1,7 +1,7 @@
 {
     "description": {
-        "it": "ciao",
-        "en": "hi"
+        "it": "<div class='mySubTitle'>Corso di ingegneria informatica</div><div><span class='spanBolder'>C & Java</span> fondamenti di informatica, gestione dei processi, architetture client/server architecture, socket, RMI, RPC.</div> <div><span class='spanBolder'>C#</span> ingegneria del software: raccolta dei requisiti, analisi, progettazione e implementazione di un gestionale per contenuti multimediali in C#.</div> <div><span class='spanBolder'>Bash / linux</span> Comandi bash, LDAP, gestione di reti, monitoring (SNMP).</div> <div><span class='spanBolder'>SQL</span> progettagione e database con IBM Db2, query sql, trigger sql.</div> <div><span class='spanBolder'>Assembler</span> piccoli programmi in assembler congiuntamente alla progettazione di sistemi basati su microprocessore.</div>",
+        "en": "<div class='mySubTitle'>Computer engineering course</div><div><span class='spanBolder'>C & Java</span> fundamentals of IT, process management, client / server architecture, socket, RMI, RPC.</div> <div><span class='spanBolder'>C#</span> software engineering: collection of requirements, analysis, design and implementation of a management software for multimedia contents in C#.</div> <div><span class='spanBolder'>Bash / linux</span> Bash Commands, LDAP, network management, monitoring (SNMP).</div> <div><span class='spanBolder'>SQL</span> database design with IBM Db2, sql query, sql trigger.</div> <div><span class='spanBolder'>Assembler</span> small assembler programs together with the design of microprocessor-based systems.</div>"
     },
     "title": {
         "it": "Strumenti, linguaggi e Tecnologie infomatiche",
@@ -50,15 +50,62 @@
                 "size": 900,
                 "renderLabel": false,
                 "svg": "https://miro.medium.com/max/787/1*IYEvbY1IRNoXRTuAIWpERQ.png"
+            },
+            {
+                "id": "RMI",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/200/1*exWoX4CzgqVHfmFqJa0-KA.png"
+            },
+            {
+                "id": "RPC",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://banner2.cleanpng.com/20180616/cte/kisspng-rpc-tv-remote-procedure-call-logo-port-rpctv-5b25130eb612b9.4778388415291563667458.jpg"
+            },
+            {
+                "id": "Visio",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://my.interworkscloud.com/Data/Products/2015/8/31/%7B18E3C038-6B96-4213-B4EA-5399EBEEE781%7D/%7B0DDC403A-6983-4443-8293-C5BF0047ED5E%7D/visio%20logo.png"
+            },
+            {
+                "id": "LDAP",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://i2.wp.com/static.techbast.com/2019/05/LDAP_1.png?resize=500%2C381&ssl=1"
+            },
+            {
+                "id": "SNMP",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/600/0*iFqJnRmzlBCmLDPJ.png"
+            },
+            {
+                "id": "Db2",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://p7.hiclipart.com/preview/879/229/166/ibm-db2-database-computer-software-sql-ibm.jpg"
+            },
+            {
+                "id": "Bash",
+                "size": 900,
+                "renderLabel": false,
+                "svg": "https://camo.githubusercontent.com/a7de91b915d8b286dda762e3683d9a1c961692d43f8349d020ecd54634a823cf/68747470733a2f2f63646e2e7261776769742e636f6d2f6f64622f6f6666696369616c2d626173682d6c6f676f2f6d61737465722f6173736574732f4c6f676f732f4964656e746974792f504e472f424153485f6c6f676f2d7472616e73706172656e742d62672d636f6c6f722e706e67"
             }
-
         ],
         "links": [
             {"source": "C", "target": "Java" },
             {"source": "JS", "target": "Java" },
             {"source": "C", "target": "Assembler" },
+            {"source": "C", "target": "RPC" },
             {"source": "Java", "target": "C#" },
-            {"source": "C", "target": "Prolog" }
+            {"source": "Java", "target": "RMI" },
+            {"source": "Visio", "target": "C#" },
+            {"source": "C", "target": "Prolog" },
+            {"source": "SQL", "target": "Db2" },
+            {"source": "Bash", "target": "SNMP" },
+            {"source": "Bash", "target": "LDAP" }
         ]
     }
 }

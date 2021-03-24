@@ -71,7 +71,7 @@ class MyParticels extends React.Component {
                 },
                 links: {
                   color: "#ffffff",
-                  distance: 200,
+                  distance: 300,
                   enable: true,
                   opacity: 1,
                   width: 1,
@@ -84,15 +84,15 @@ class MyParticels extends React.Component {
                   enable: true,
                   outMode: "bounce",
                   random: false,
-                  speed: 2,
+                  speed: 1.5,
                   straight: false,
                 },
                 number: {
                   density: {
                     enable: true,
-                    value_area: 400,
+                    value_area: 300,
                   },
-                  value: 40,
+                  value: 15,
                 },
                 opacity: {
                   value: 1,

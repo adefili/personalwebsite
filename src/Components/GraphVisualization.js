@@ -5,7 +5,6 @@ import graph_data_eng from './../json/data_eng_graph_content.json';
 import graph_front_end from './../json/front_end_graph_content';
 import graph_accademic from './../json/accademic_graph_content';
 import graph_productivity from './../json/productivity_graph_content';
-import graph_other from './../json/productivity_graph_content';
 import GraphMultiSelector from './GraphMultiSelector';
 import GraphDescription from './GraphDescription';
 
@@ -24,6 +23,11 @@ class GraphVisualization extends React.Component{
         //this.onClickNode = this.onClickNode.bind(this);
         this.changeText = this.changeText.bind(this);
         window.addEventListener('resize', this.handleResize);
+        this.graref = React.createRef();
+    }
+
+    componentDidMount(){
+        this.graref.current.state.simulation.restart();
     }
 
     changeText(e){
@@ -32,11 +36,17 @@ class GraphVisualization extends React.Component{
 
     changeGraph(e){
         this.setState({graph: e});
-        console.log(document.getElementsByClassName("GraphContent"));
+        console.log(this.graref);
+        this.graref.current.restartSimulation();
+        this.graref.current.state.simulation.restart();
     }
 
     handleResize(e){
         this.setState({width: window.innerWidth});
+    }
+
+    resetNodesPositions(){
+        this.graphRef.resetNodesPositions();
     }
 
     //onClickNode(nodeId) {
@@ -49,7 +59,9 @@ class GraphVisualization extends React.Component{
 //
     //};
 
+
     render() {
+
         var width = 100;
         if(this.state.width < 1080){
             width = this.state.width * 90 * 935 / 1000 / 100;
@@ -70,9 +82,9 @@ class GraphVisualization extends React.Component{
             maxZoom: 1,
             minZoom: 0.5,
             d3: {
-                alphaTarget: 0,
-                gravity: -700,
-                linkLength: 100,
+                alphaTarget: 0.1,
+                gravity: -1200,
+                linkLength: 150,
                 linkStrength: 1,
             },
             node: {
@@ -86,11 +98,10 @@ class GraphVisualization extends React.Component{
         };
 
         var graph_data = null;
-        if(this.state.graph == "front") {graph_data = graph_front_end;        }
+        if(this.state.graph == "front") graph_data = graph_front_end;
         if(this.state.graph == "data") graph_data = graph_data_eng;
         if(this.state.graph == "accademic") graph_data = graph_accademic;
         if(this.state.graph == "productivity") graph_data = graph_productivity;
-        if(this.state.graph == "other") graph_data = graph_other;
 
         return (
             <div className="paper">   
@@ -103,6 +114,7 @@ class GraphVisualization extends React.Component{
                             id="graph-id"
                             data={graph_data.graph}
                             config={myConfig}
+                            ref={this.graref}
                             //onClickNode={this.onClickNode}
                             //onClickLink={this.onClickLink}
                         />

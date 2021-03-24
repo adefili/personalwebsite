@@ -57,7 +57,8 @@
             {"source": "HTML", "target": "JS" },
             {"source": "HTML", "target": "CSS" },
             {"source": "HTML", "target": "JSP servlet" },
-            {"source": "Hibernate", "target": "JSP servlet" }
+            {"source": "Hibernate", "target": "JSP servlet" },
+            {"source": "Wordpress", "target": "Wordpress" }
         ]
     }
 }

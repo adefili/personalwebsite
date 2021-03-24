@@ -11,8 +11,7 @@ class GraphMultiSelector extends React.Component{
                 { name: 'Data Engineering', short:"data", radio_idx: 0},
                 { name: 'Front End', short:"front", radio_idx: 1},
                 { name: 'Accademic', short:"accademic", radio_idx: 2},
-                { name: 'Productivity', short:"productivity", radio_idx: 3},
-                { name: 'Other', short:"other", radio_idx: 4}
+                { name: 'Productivity', short:"productivity", radio_idx: 3}
               ]
         };
     } 

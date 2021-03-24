@@ -1,7 +1,7 @@
 {
     "description": {
-        "it": "ciao",
-        "en": "hi"
+        "it": "<div>In questa sezione ho riportato solamente i programmi di produttività o IDE che utilizzo di più.</div><div>Di questi i programmi fondamentali sono: sublime, power point, excel, microsoft teams, google drive e la g-suite.</div>",
+        "en": "<div> In this section I have reported only the productivity programs or IDEs that I use the most. </div> <div> Of these the fundamental programs for me are: sublime, power point, excel, microsoft teams, google drive and the g- suite.</div>"
     },
     "title": {
         "it": "Strumenti, linguaggi e Tecnologie infomatiche",
@@ -10,92 +10,124 @@
     "graph": {
         "nodes": [
             { 
-                "id": "sublime",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "id": "Sublime",
+                "size": 700,
+                "renderLabel": false,
+                "svg": "https://i.imgur.com/AGmyyOX.png"
             },
             { 
                 "id": "intellij idea",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "http://assets.stickpng.com/images/58480910cef1014c0b5e48f7.png"
             },
             { 
                 "id": "visual studio code",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "size": 1400,
+                "renderLabel": false,
+                "svg": "https://socialandtech.net/wp-content/uploads/2019/03/visualstudio_code-card.png"
             },
             { 
                 "id": "notepad++",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/600/0*XdLHTLri-4RFAMoO"
             },
             { 
                 "id": "microsoft 365",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://banner2.cleanpng.com/20180612/huy/kisspng-microsoft-office-365-information-technology-micros-remote-desktop-5b1fc695202e14.5319398015288091091318.jpg"
             },
             { 
                 "id": "google suite",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "size": 1000,
+                "renderLabel": false,
+                "svg": "https://banner2.cleanpng.com/20180711/gqg/kisspng-g-suite-google-drive-google-docs-google-search-gsuite-5b4673d82429f0.7004559815313438321481.jpg"
             },
             { 
                 "id": "onedrive",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://p7.hiclipart.com/preview/798/521/82/onedrive-microsoft-office-365-cloud-storage-google-drive-microsoft.jpg"
             },
             { 
                 "id": "sharepoint",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "size": 1400,
+                "renderLabel": false,
+                "svg": "https://banner2.cleanpng.com/20180605/iyk/kisspng-sharepoint-online-microsoft-office-365-microsoft-s-yammer-5b16fd9366f300.9614076915282333634217.jpg"
             },
             { 
                 "id": "google drive",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://power2cloud.com/wp-content/uploads/2017/07/google-drive-power2Cloud-Google-Cloud-Partner.png"
             },
             { 
                 "id": "microsoft teams",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "size": 1500,
+                "renderLabel": false,
+                "svg": "https://miro.medium.com/max/1000/1*p92lKHCktL0UqwLnGXIfCw.png"
             },
             { 
                 "id": "zoom",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://excelldesign.co.uk/wp-content/uploads/2020/04/Zoom-App-Icon-2.png"
             },
             { 
-                "id": "keypass",
+                "id": "keepass",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://img1.pnghut.com/18/20/22/XUV9VG17MD/hacker-password-database-random-generator-keepass.jpg"
             },
             { 
                 "id": "plan.io",
-                "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "size": 1200,
+                "renderLabel": false,
+                "svg": "https://theappspace.com/wp-content/uploads/sites/248/2020/07/Planio-logo.png"
             },
             { 
                 "id": "virtual box",
                 "size": 800,
-                "renderLabel": true,
-                "svg": ""
+                "renderLabel": false,
+                "svg": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png"
+            },
+            { 
+                "id": "eclipse",
+                "size": 1400,
+                "renderLabel": false,
+                "svg": "https://www.eclipse.org/lists/cdt-dev/pngMkqa06TC1W.png"
+            },
+            { 
+                "id": "visual studio",
+                "size": 1400,
+                "renderLabel": false,
+                "svg": "https://www.parallels.com/blogs/app/uploads/2017/03/visual_studio_purple.png"
+            },
+            { 
+                "id": "greenshot",
+                "size": 1700,
+                "renderLabel": false,
+                "svg": "https://cdn-images-1.medium.com/max/800/0*lFv_tzUkc92gtbag.png"
             }
         ],
         "links": [
-            {"source": "keypass", "target": "plan.io" }
+            {"source": "Sublime", "target": "intellij idea" },
+            {"source": "Sublime", "target": "notepad++" },
+            {"source": "visual studio code", "target": "visual studio"},
+            {"source": "visual studio code", "target": "visual studio"},
+            {"source": "eclipse", "target": "intellij idea" },
+            {"source": "microsoft 365", "target": "google suite" },
+            {"source": "microsoft 365", "target": "sharepoint" },
+            {"source": "sharepoint", "target": "onedrive" },
+            {"source": "google drive", "target": "onedrive" },
+            {"source": "google drive", "target": "google suite" },
+            {"source": "microsoft teams", "target": "microsoft 365" },
+            {"source": "microsoft teams", "target": "zoom"},
+            {"source": "keepass", "target": "keepass"},
+            {"source": "virtual box", "target": "virtual box"},
+            {"source": "greenshot", "target": "greenshot"}
         ]
     }
 }
