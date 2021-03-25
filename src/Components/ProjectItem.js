@@ -28,14 +28,19 @@ class ProjectItem extends React.Component{
     }
 
     render() { 
+        var tags = [];
+        for (var idx = 0; idx < this.props.tags.length; idx++) {
+            console.log(this.props.tags[idx]);
+            tags.push(<span class="ProjectTag">{this.props.tags[idx]}</span>);
+        }
 
         return (  
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
             <div className="ProjectItem" onClick={() => this.hideShowComponent()}>
                 <div className="ProjectFlexContainer">
-                    <img src={logo} alt="IMG" class="ProjectImage" />
+                    <img src={this.props.image} alt="IMG" class="ProjectImage" />
                     <div class="ProjectName">{this.props.name}</div>
-                    <div class="ProjectTags">{this.props.tags}</div>
+                    <div class="ProjectTags">{tags}</div>
                     <div class="ProjectDate">{this.props.date}</div>
                 </div>
             <Spring 

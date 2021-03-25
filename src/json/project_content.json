@@ -1,0 +1,95 @@
+{
+   "projects": [
+      {
+         "name": {
+           "it":"Questo sito internet",
+           "en":"This Website"  
+         },
+         "description": {
+            "it":"Per la mia tesi di laurea ho implementato il Framework di ragionamento logico “Event Calculus” utilizzando PROLOG esteso con constraint Handling Rules (CHR). Questo framework permette di dedurre lo stato di un sistema data una narrativa di eventi. Attualmente risulta l’implementazione più performante in contesti dinamici oltre ad essere puramente logica (non fa uso di costrutti non logici ed è matematicamente dimostrabile)",
+            "en":"For my degree thesis I implementato the “Event Calculus“ logical reasoning framework using PROLOG extended with constraint Handling Rules (CHR). This framework allows to deduce the state of a system given a narrative of events. Currently it is the most performing implementation in dynamic contexts as well as being purely logical (it does not use non-logical constructs and is mathematically demonstrable)"  
+         },
+         "tags": ["React","JS","HTML","CSS"],
+         "image": "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
+         "date": "2021"
+      },
+      {
+         "name": {
+           "it":"Tesi di Laurea - implentazione in Prolog del framework Event Calculus",
+           "en":"Degree thesis - Implantation in Prolog of the framework Event Calculus"  
+         },
+         "description": {
+            "it":"Per la mia tesi di laurea ho implementato il Framework di ragionamento logico “Event Calculus” utilizzando PROLOG esteso con constraint Handling Rules (CHR). Questo framework permette di dedurre lo stato di un sistema data una narrativa di eventi. Attualmente risulta l’implementazione più performante in contesti dinamici oltre ad essere puramente logica (non fa uso di costrutti non logici ed è matematicamente dimostrabile)",
+            "en":"For my degree thesis I implementato the “Event Calculus“ logical reasoning framework using PROLOG extended with constraint Handling Rules (CHR). This framework allows to deduce the state of a system given a narrative of events. Currently it is the most performing implementation in dynamic contexts as well as being purely logical (it does not use non-logical constructs and is mathematically demonstrable)"  
+         },
+         "tags": ["Logic","AI","Prolog","CHR","Python"],
+         "image": "https://plugins.jetbrains.com/files/13954/93201/icon/pluginIcon.png",
+         "date": "2019"
+      },
+      {
+         "name": {
+           "it":"Responsabile regionale Blockchain Educational Network (BEN) - Bologna",
+           "en":"Blockchain Educational Network (BEN) Association - Bologna"  
+         },
+         "description": {
+            "it":"Sono stato responsabile regionale dell’associazione Blockchain Educational Network (BEN). Ho organizzato mensilmente conferenze all'incubatore per startup almacube.",
+            "en":"I was in charge of the Blockchain Educational Network (BEN) association in Bologna. I have organized monthly conferences at the almacube startup incubator."  
+         },
+         "tags": ["Association","BlockChain"],
+         "image": "https://cdn1.iconfinder.com/data/icons/business-partnership-glyph/64/communication-network-association-relation-partnership-512.png",
+         "date": "2019"
+      },
+      {
+         "name": {
+           "it":"App Android Rubrica chiavi pubbliche",
+           "en":"App Android public address book"  
+         },
+         "description": {
+           "it":"Ho creato un'app Android per la gestione delle chiavi pubbliche per criptovalute. Le chiavi possono essere inserite manualmente o scansionando un QRCode. Le chiavi memorizzate possono essere visualizzate in base al proprietario, facilmente condivisibili tramite QRCode generati nell'app o tramite stringa, e possono essere facilmente cercate o raggruppate.",
+           "en":"I created an Android App for managing public keys for cryptocurrencies. Keys can be entered manually or by scanning a QRCode. The stored keys can be viewed by owner, easily shared via QRCodes generated in the app or via string, and can be easily searched or grouped."  
+         },
+         "tags": ["Android","App","Java","SQLite"],
+         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png",
+         "date": "2018"
+      },
+      {
+         "name": {
+           "it":"Q-Table Solver 2048",
+           "en":"Q-Table Solver 2048"  
+         },
+         "description": {
+            "it":"Ho realizzato una semplice AI capace di risolvere il gioco 2048. Dopo avere replicato il gioco in python, ho utilizzato la strategia della Q-table per realizzare il solver.",
+            "en":"I made a simple AI capable of solving the 2048 game. After replicating the game in python, I used the Q-table strategy to build the solver."  
+         },
+         "tags": ["Python","AI","Pandas","Numpy"],
+         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png",
+         "date": "2018"
+      },
+      {
+         "name": {
+           "it":"Ass. Professionisti Blockchain",
+           "en":"Ass. Professionisti Blockchain"  
+         },
+         "description": {
+            "it":"Ho aiutato a fondare l’associazione Professionisti Blockchain. Qui ho realizzato riassunti di White Paper, selezionato materiale didattico e organizzato speach nelle università abruzzesi.",
+            "en":"I helped found the Blockchain Professionals association. Here I made summaries of White Paper, selected teaching material and organized speach in Abruzzo universities."  
+         },
+         "tags": ["Association","BlockChain"],
+         "image": "https://cdn1.iconfinder.com/data/icons/business-partnership-glyph/64/communication-network-association-relation-partnership-512.png",
+         "date": "2018"
+      },
+      {
+         "name": {
+           "it":"Mining Bitcoin",
+           "en":"Mining Bitcoin"  
+         },
+         "description": {
+            "it":"Usando 2 radeon 7770 ho minato, con un amico, 0.95 bitcoin quando bitcoin raggiunse per la prima volta circa 120$ di valore",
+            "en":"Using 2 radeon 7770 i have mined, with a friend, 0.95 bitcoin when bitcoin peaked around 120$ for the first time"  
+         },
+         "tags": ["Bitcoin", "Mining", "BlockChain"],
+         "image": "https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png",
+         "date": "2013"
+      }                 
+     ]
+}
