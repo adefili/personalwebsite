@@ -1,5 +1,6 @@
 import React from 'react';
 import LanguageItem from './LanguageItem';
+import text from './../json/language_content';
 import { Spring} from 'react-spring/renderprops';
 
 class Language extends React.Component{
@@ -16,18 +17,24 @@ class Language extends React.Component{
 
     render() {   
         const items = [];
-        var description = "With the continuous improvement of information "
+        var description = "";
+        var width = "";
+        var name = "";
+        var showDescription = false;
       
-        for (var idx = 0; idx < 4; idx++) {
-
-            var width = (100 / 7 * ( this.getRandomInt(7) +1 )) ;
-            description = description + "ciao" + description;
-            var name = "English Reading";
-
-            items.push(
-                <LanguageItem customWidth={width} 
-                              description={description}
-                              name={name}/>)
+        for (var i = 0; i < text.languages.length; i++) {
+            showDescription = false;
+            for (var j = 0; j < text.languages[i].values.length; j++) {
+                width = (100 / 7 * ( text.languages[i].values[j].value));
+                description = text.languages[i].description;
+                name = text.languages[i].language + " " + text.languages[i].values[j].name;
+                if(text.languages[i].values.length - 1 == j) showDescription = true; 
+                items.push(
+                    <LanguageItem customWidth={width} 
+                                  description={description}
+                                  name={name}
+                                  showDescription={showDescription}/>)
+            }
         }
 
         return (

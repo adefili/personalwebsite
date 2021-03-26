@@ -11,9 +11,9 @@ class ProjectItem extends React.Component{
             isVisible: false,
             showHidePaper: false,
             block: true,
+            width: window.innerWidth,
         }
         this.onVisible = this.onVisible.bind(this);
-        this.width = 0;
     }
 
     onVisible(isVisible){
@@ -29,8 +29,11 @@ class ProjectItem extends React.Component{
 
     render() { 
         var tags = [];
+        var showTag = true;
+        if(this.state.width < 680) showTag = false;
+        console.log(showTag);
+
         for (var idx = 0; idx < this.props.tags.length; idx++) {
-            console.log(this.props.tags[idx]);
             tags.push(<span class="ProjectTag">{this.props.tags[idx]}</span>);
         }
 
@@ -40,7 +43,7 @@ class ProjectItem extends React.Component{
                 <div className="ProjectFlexContainer">
                     <img src={this.props.image} alt="IMG" class="ProjectImage" />
                     <div class="ProjectName">{this.props.name}</div>
-                    <div class="ProjectTags">{tags}</div>
+                    {showTag && <div class="ProjectTags">{tags}</div>}
                     <div class="ProjectDate">{this.props.date}</div>
                 </div>
             <Spring 

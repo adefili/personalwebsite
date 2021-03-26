@@ -33,7 +33,7 @@ class LanguageItem extends React.Component{
                   {props => (
                 <div class="LanguageGridContainer">
                   <animated.div class="LanguageBar" style={{width: props.width + "%", opacity: props.opacity}}></animated.div>
-                  <animated.div style={{opacity: props.opacity}} class="LanguageDescription" >{this.props.description}</animated.div>
+                  { this.props.showDescription && <animated.div style={{opacity: props.opacity}} class="LanguageDescription" >{this.props.description}</animated.div>}
                   <animated.div style={{opacity: props.opacity}} class="LanguageA1">A1</animated.div>
                   <animated.div style={{opacity: props.opacity}} class="LanguageA2">A2</animated.div>
                   <animated.div style={{opacity: props.opacity}} class="LanguageB1">B1</animated.div>

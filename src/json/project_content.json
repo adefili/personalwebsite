@@ -15,20 +15,20 @@
       },
       {
          "name": {
-           "it":"Tesi di Laurea - implentazione in Prolog del framework Event Calculus",
-           "en":"Degree thesis - Implantation in Prolog of the framework Event Calculus"  
+           "it":"Tesi di Laurea - implentazione di Event Calculus",
+           "en":"Degree thesis - Implantation of Event Calculus"  
          },
          "description": {
             "it":"Per la mia tesi di laurea ho implementato il Framework di ragionamento logico “Event Calculus” utilizzando PROLOG esteso con constraint Handling Rules (CHR). Questo framework permette di dedurre lo stato di un sistema data una narrativa di eventi. Attualmente risulta l’implementazione più performante in contesti dinamici oltre ad essere puramente logica (non fa uso di costrutti non logici ed è matematicamente dimostrabile)",
             "en":"For my degree thesis I implementato the “Event Calculus“ logical reasoning framework using PROLOG extended with constraint Handling Rules (CHR). This framework allows to deduce the state of a system given a narrative of events. Currently it is the most performing implementation in dynamic contexts as well as being purely logical (it does not use non-logical constructs and is mathematically demonstrable)"  
          },
-         "tags": ["Logic","AI","Prolog","CHR","Python"],
+         "tags": ["AI","Prolog","CHR","Python"],
          "image": "https://plugins.jetbrains.com/files/13954/93201/icon/pluginIcon.png",
          "date": "2019"
       },
       {
          "name": {
-           "it":"Responsabile regionale Blockchain Educational Network (BEN) - Bologna",
+           "it":"Responsabile regionale Blockchain Educational Network (BEN)",
            "en":"Blockchain Educational Network (BEN) Association - Bologna"  
          },
          "description": {

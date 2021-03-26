@@ -1,0 +1,36 @@
+{
+    "languages":[
+        {
+            "language": "Italiano",
+            "description": "Madre lingua",
+            "values": [
+                {
+                    "name": "",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "language": "English",
+            "description": "I read technical documentation on a daily basis, enjoy entertainment products and can follow the lyrics of the English songs I listen to. I want to improve my English pronunciation and following a singing course is improving that aspect. As for writing, I was able to write a lot of technical documentation as well as interactions on different international social networks.",
+            "values": [
+                {
+                    "name": "Reading",
+                    "value": 5.6
+                },
+                {
+                    "name": "Writing",
+                    "value": 4.1
+                },
+                {
+                    "name": "Speaking",
+                    "value": 4.2
+                },
+                {
+                    "name": "comprehension",
+                    "value": 5.3
+                }
+            ]
+        }
+    ]
+}

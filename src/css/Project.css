@@ -31,7 +31,7 @@
   font-size: 16px;
   text-align: center;
   margin-right: auto;
-  margin-right: 10px;
+  margin-left: auto;
   width: 60%;
   margin-top: auto;
   margin-bottom: auto;
@@ -40,14 +40,15 @@
 .ProjectImage{
   display: flex;
   width: 80px;
-  margin-right: 10px;
   padding: 10px;
 }
 
 .ProjectTags{
   display: flex;
-  align-items: center;
-  width: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  width: 25%;
   overflow:hidden;
   font-size: 14px;
   margin-left: auto;
@@ -58,15 +59,16 @@
 
 .ProjectTag{
   margin-left: 5px;
-  font-size: 15px;
+  font-size: 14px;
+  width: fit-content;
   color: rgba(78, 78, 78, 0.7);
   border-style: solid;
+  margin-top: 5px;
   padding-right: 6px;
   padding-left: 6px;
   padding-bottom: 1px;
   padding-top: 1px;
-  margin-left: 6px;
-  margin-right: auto;
+
   border-width: 1px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.3);
