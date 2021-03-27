@@ -4,7 +4,7 @@ import KeyboardArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounde
 import { Button } from 'react-bootstrap';
 import MyTimelineSeparator from './MyTimelineSeparator';
 import { interpolate, Spring, animated, config} from 'react-spring/renderprops';
-import VizSensor from 'react-visibility-sensor';
+import styled from 'styled-components'
 
 class MyTimelineItem extends React.Component {
     constructor() {
@@ -37,14 +37,7 @@ class MyTimelineItem extends React.Component {
 
     render() {
         return (
-            <Spring
-            config={{ tension: 280, friction: 200 }}
-            delay={0}
-            from={{opacity: 1}}
-            to={{opacity: this.state.isVisible ? 1 : 0}}>
-            {props => (
-                <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
-                <animated.div style={props}>
+            <animated.div>
             <TimelineItem className="TimelineItem">
                 <div className="TimelineOppositeItem">
                     <div >{this.props.secondaryText}</div>
@@ -64,16 +57,20 @@ class MyTimelineItem extends React.Component {
                             from={{rotate: this.state.showHidePaper ? 0 : 180}}
                             to={{rotate: this.state.showHidePaper ? 180 : 0}}>
                             {({rotate}) => 
-                                <animated.div style={{transform: interpolate([rotate], (r) => `rotate(${r}deg)`)}}>
+                                <div style={{transform: interpolate([rotate], (r) => `rotate(${r}deg)`)}}>
                                 <KeyboardArrowDownRounded className="TimelineOpenButton" onClick={() => this.hideShowComponent()} />
-                                </animated.div>
+                                </div>
                             }
                             </Spring>
                         
                             </div>
                         <Spring 
-                            native
-                            force
+                            native force
+                            config={{
+                                mass: 4, tension: 200,
+                                friction: 35, clamp: true,
+                                precision: 0.01, velocity: 5,
+                                delay: 0}}
                             immediate={this.state.block}
                             from={{height: this.state.showHidePaper ? 0 : "auto",
                                 opacity: this.state.showHidePaper ? 0 : 1}}
@@ -81,13 +78,15 @@ class MyTimelineItem extends React.Component {
                                 opacity: this.state.showHidePaper ? 1 : 0}}>
                             {props =>
                                 <animated.div style={props} id="TimelineContentContainer">
-                                    <div >
-                                        <div onClick={() => this.hideShowComponent()} style={{ "padding-left": "5%", "padding-right": "5%" }} dangerouslySetInnerHTML={{ __html: this.props.paperContent }}>
-                                        </div>
-                                    </div>
-                                    <div className="TimelineButton">
+                                    <animated.div >
+                                    <animated.div >
+                                        <animated.div onClick={() => this.hideShowComponent()} style={{ "padding-left": "5%", "padding-right": "5%" }} dangerouslySetInnerHTML={{ __html: this.props.paperContent }}>
+                                        </animated.div>
+                                    </animated.div>
+                                    <animated.div className="TimelineButton">
                                         <Button href={this.props.link} target="_blank">{this.props.buttonContent} </Button>
-                                    </div>
+                                    </animated.div>
+                                    </animated.div>
                                 </animated.div>
                             }
                         </Spring>
@@ -95,9 +94,6 @@ class MyTimelineItem extends React.Component {
                 </>
             </TimelineItem>
             </animated.div>
-                    </VizSensor>
-                    )}              
-                </Spring>
         )
     }
 }

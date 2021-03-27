@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 
 const StyledBurger = styled.button`
-
 div {
   background: ${ ({ open }) => open ? '#0D0C1D' : '#EFFFFA'};
   transition: all 0.3s linear;

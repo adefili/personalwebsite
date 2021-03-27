@@ -49,6 +49,15 @@ class ProjectItem extends React.Component{
             <Spring 
                 native
                 force
+                config={{
+                    mass: 5,
+                    tension: 300,
+                    friction: 16,
+                    clamp: true,
+                    precision: 0.01,
+                    velocity: 5,
+                    delay: 0
+                    }}
                 immediate={this.state.block}
                 from={{height: this.state.showHidePaper ? 0 : "auto",
                     opacity: this.state.showHidePaper ? 0 : 1,
