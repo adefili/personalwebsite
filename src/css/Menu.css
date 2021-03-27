@@ -1,4 +1,4 @@
-.BurgerLine{
+.Burger .BurgerLine{
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
@@ -6,8 +6,8 @@
     box-shadow: 2px 2px 2px grey;
 }
 
-.BurgerLine:hover{
-    box-shadow: 4px 4px 4px grey;
+.Burger:hover .BurgerLine{
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
 }
 
 .Burger{
