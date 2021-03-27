@@ -45,3 +45,18 @@
   
   #graph-id-graph-container-zoomable{
   }
+
+  .graphButtonGroup{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .graphButton{
+    width: fit-content;
+    border-radius: 0px;
+    background-color: rgba(57, 57, 57, 0.8);;
+    border-color: rgba(57, 57, 57, 0.8);
+  }

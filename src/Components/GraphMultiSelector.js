@@ -26,12 +26,12 @@ class GraphMultiSelector extends React.Component{
         return (
             <div className="GraphMultiSelector">
                 <div className="ButtonGroup">
-                    <ButtonGroup toggle>
+                    <ButtonGroup toggle className="graphButtonGroup">
                         {this.state.radios.map((radio, idx) => (                      
                         <ToggleButton
                             key={idx}
                             type="radio"
-                            variant="secondary"
+                            className="graphButton"
                             name="radio"
                             value={radio.radio_idx}
                             checked={this.state.radioValue === radio.radio_idx}
