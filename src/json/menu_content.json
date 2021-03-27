@@ -1,0 +1,67 @@
+{
+    "menu":[
+        {
+            "header": 
+                {
+                    "it" : "Sezioni del sito",
+                    "en" : "Website Section"
+                },
+            "content": [
+                {
+                    "text": 
+                        {
+                            "it" : "Presentazione",
+                            "en" : "Presentation"
+                        },
+                    "href": "",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Esperienze Lavorative & Studio",
+                            "en" : "Job & Educational Experiences"
+                        },
+                    "href": "",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Strumenti, linguaggi e Tecnologie infomatiche",
+                            "en" : "IT Tools, languages and Technologies"
+                        },
+                    "href": "",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Progetti",
+                            "en" : "Projects"
+                        },
+                    "href": "",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Lingue",
+                            "en" : "Languages"
+                        },
+                    "href": "",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Sport",
+                            "en" : "Sport"
+                        },
+                    "href": "",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}

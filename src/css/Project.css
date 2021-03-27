@@ -16,6 +16,7 @@
 .ProjectItem:hover{
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 7px 7px 7px grey;
+  cursor: pointer;
 }
 
 .ProjectFlexContainer{
@@ -68,7 +69,6 @@
   padding-left: 6px;
   padding-bottom: 1px;
   padding-top: 1px;
-
   border-width: 1px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.3);

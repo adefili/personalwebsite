@@ -17,26 +17,13 @@ class Project extends React.Component{
 
     render() {   
         const items = [];
-
-        var tags = "REACT ";
-        var description = "CIAO";
-        var name = "Project Name";
-
-        
-
         for (var idx = 0; idx < text.projects.length; idx++) {
-            var name = text.projects[idx].name[this.state.language];
-            var description = text.projects[idx].description[this.state.language];
-            var tags = text.projects[idx].tags;
-            var image = text.projects[idx].image;
-            var date = text.projects[idx].date;
-
             items.push(
-                <ProjectItem name = {name}
-                            description = {description}
-                            tags = {tags}
-                            image = {image}
-                            date = {date}/>)
+                <ProjectItem name = {text.projects[idx].name[this.state.language]}
+                            description = {text.projects[idx].description[this.state.language]}
+                            tags = {text.projects[idx].tags}
+                            image = {text.projects[idx].image}
+                            date = {text.projects[idx].date}/>)
         }
 
         return (

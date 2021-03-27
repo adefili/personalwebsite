@@ -7,10 +7,15 @@ class BurgerMenu extends React.Component{
         super(props);
         this.state = {
             open: false,
+            language: "en"
         }
         this.reference = React.createRef();
         this.setOpen = this.setOpen.bind(this);
+        this.changeText = this.changeText.bind(this);
+    }
 
+    changeText(e){
+        this.setState({language: e});
     }
 
     setOpen(){
@@ -21,7 +26,7 @@ class BurgerMenu extends React.Component{
         return (
             <div>
                 <Burger handler={this.setOpen} />
-                <Menu ref={this.reference} open={this.state.open}/>
+                <Menu handler={this.props.handler} ref={this.reference} open={this.state.open} language={this.state.language}/>
             </div>
         );
     }
