@@ -5,8 +5,8 @@ import GraphVisualization from './Components/GraphVisualization';
 import MyParticels from './Components/MyParticels';
 import Language from './Components/Language';
 import Sport from './Components/Sport';
-import TestAnimation from './Components/TestAnimation'
 import Project from './Components/Project';
+import BurgerMenu from './Components/BurgerMenu';
 import React from 'react';
 
 class AllComponents extends React.Component {
@@ -35,7 +35,8 @@ class AllComponents extends React.Component {
     return (
       <div className="all">
         <MyParticels className="particelsAsBackground"></ MyParticels>
-          <div className="WholeSite">            
+          <div className="WholeSite">
+            <BurgerMenu />  
             <LanguageButton handler={this.updateLanguage} />
             <Presentation language={this.state.language} ref={this.presentationRef} />
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
