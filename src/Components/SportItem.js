@@ -24,13 +24,12 @@ class SportItem extends React.Component{
     render() { 
 
         return (  
-            <div>
+            <div class="SportItem">
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
             <div class="Sport-grid-container">
                 <img src={logo} alt="IMG" class="SportImage" />
                 <div class="SportName">{this.props.name}</div>
-                <div class="SportDate">{this.props.date}</div> 
-                <div class="SportDescription">{this.props.description}</div> 
+                <div class="SportDate">{this.props.date}</div>
             </div>
             </VizSensor>
             </div>

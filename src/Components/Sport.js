@@ -10,15 +10,16 @@ class Sport extends React.Component{
     render() {   
         const items = [];
       
-        var description = "CIAO"
+        var description = "CIAO asd asddas sdsd as";
+        var name = "asddsaasd dsa sda dsadsaasd asasd sdsd ssssss";
         for (var idx = 0; idx < 4; idx++) {
 
             description = "sport fantastico bellissimo sport fantastico bellissimo" + description + description
-            var name = "Sport Name"
+            name = "Sport Name" + name;
             var date = "2019"
 
             items.push(
-                <SportItem description={description}
+                <SportItem //description={description}
                            name={name}
                            date={date}/>)
         }

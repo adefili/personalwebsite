@@ -1,34 +1,42 @@
 .Sport{
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.SportItem{
+  min-width: 280px;
+  width: 45%;
+  padding: 5px;
 }
 
 .Sport-grid-container {
-    display: grid;
-    grid-template-areas:
-    'img name date'
-    'img desc desc';
-    grid-gap: 10px;
-    grid-template-columns: 1fr 7fr;
-    grid-template-rows: 20px 80px;
-    padding: 5px;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-    background-color: rgba(255, 255, 255, 0.3);
-    
-  }
+  display: grid;
+  grid-template-areas:
+  'img name date'
+  'img desc desc';
+  grid-gap: 10px;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 20px 80px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
+}
   
-  .Sport-grid-container > div {
-    padding: 5px 0;
-  }
+.Sport-grid-container > div {
+  padding: 5px 0;
+}
 
-  .SportName{
-    grid-area: name;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 0px;
+.SportName{
+  grid-area: name;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
 }
 
 .SportImage{  
@@ -36,13 +44,6 @@
     width: 100px;
     width: 100px;
     margin: auto; 
-}
-
-.SportDescription{
-    grid-area: desc; 
-    padding: 10px;
-    overflow: auto;
-    font-size: 14px;
 }
 
 .SportDate{

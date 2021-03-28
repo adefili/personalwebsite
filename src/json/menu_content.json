@@ -14,7 +14,7 @@
                             "en" : "Presentation"
                         },
                     "href": "",
-                    "value": ""
+                    "value": "scroll1"
                 },
                 {
                     "text": 
@@ -23,7 +23,7 @@
                             "en" : "Job & Educational Experiences"
                         },
                     "href": "",
-                    "value": ""
+                    "value": "scroll2"
                 },
                 {
                     "text": 
@@ -32,7 +32,7 @@
                             "en" : "IT Tools, languages and Technologies"
                         },
                     "href": "",
-                    "value": ""
+                    "value": "scroll3"
                 },
                 {
                     "text": 
@@ -41,7 +41,7 @@
                             "en" : "Projects"
                         },
                     "href": "",
-                    "value": ""
+                    "value": "scroll4"
                 },
                 {
                     "text": 
@@ -50,7 +50,7 @@
                             "en" : "Languages"
                         },
                     "href": "",
-                    "value": ""
+                    "value": "scroll5"
                 },
                 {
                     "text": 
@@ -59,8 +59,44 @@
                             "en" : "Sport"
                         },
                     "href": "",
+                    "value": "scroll6"
+                }
+            ]
+        },
+        {
+            "header": 
+                {
+                    "it" : "Altri siti",
+                    "en" : "Other Website"
+                },
+            "content": [
+                {
+                    "text": 
+                        {
+                            "it" : "GitHub",
+                            "en" : "GitHub"
+                        },
+                    "href": "https://github.com/adefili/personalwebsite",
+                    "value": ""
+                },
+                {
+                    "text": 
+                        {
+                            "it" : "Linkedin",
+                            "en" : "Linkedin"
+                        },
+                    "href": "https://www.linkedin.com/in/filippo-adessi-207456160/",
                     "value": ""
                 }
+            ]
+        },
+        {
+            "header": 
+                {
+                    "it" : "Altri miei Progetti",
+                    "en" : "My Other Projects"
+                },
+            "content": [
             ]
         }
     ]

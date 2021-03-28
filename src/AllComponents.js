@@ -39,12 +39,18 @@ class AllComponents extends React.Component {
       <div className="all">
         <MyParticels className="particelsAsBackground"></ MyParticels>
           <div className="WholeSite">
-            <BurgerMenu handler={this.updateLanguage} ref={this.menuRef} language={this.state.language}/>  
+            <BurgerMenu handler={this.updateLanguage} ref={this.menuRef} language={this.state.language}/>
+            <div id="scroll1"></div>
             <Presentation language={this.state.language} ref={this.presentationRef} />
+            <div id="scroll2"></div>
             <MyTimeline ref={this.timelineRef} language={this.state.language} />
+            <div id="scroll3"></div>
             <GraphVisualization ref={this.graphRef} language={this.state.language} />
+            <div id="scroll4"></div>
             <Project ref={this.projectRef}/>
+            <div id="scroll5"></div>
             <Language />
+            <div id="scroll6"></div>
             <Sport />
           </div>
       </div>
