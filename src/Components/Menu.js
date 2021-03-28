@@ -20,7 +20,6 @@ class Menu extends React.Component{
             items.push(<div className="menuHead">{text.menu[i].header[this.props.language]}</div>);
             items.push(<div className="menuSeparator"></div>);
             for (var j = 0; j < text.menu[i].content.length; j++){
-                console.log(text.menu[i].content[j].value);
                 if(text.menu[i].content[j].value != "") items.push(<a className="menuContent" href={text.menu[i].content[j].href}><Link to={text.menu[i].content[j].value} spy={true} smooth={true}>{text.menu[i].content[j].text[this.props.language]}</Link></a>);
                 else items.push(<a className="menuContent" href={text.menu[i].content[j].href}>{text.menu[i].content[j].text[this.props.language]}</a>);
             }

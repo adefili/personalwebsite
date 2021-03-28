@@ -6,7 +6,7 @@ import './css/Graph.css';
 import './css/LanguageButton.css';
 import './css/Language.css';
 import './css/TestAnimation.css';
-import './css/Sport.css';
+import './css/SportMusic.css';
 import './css/Project.css';
 import './css/jsonHtml.css';
 import './css/Menu.css';

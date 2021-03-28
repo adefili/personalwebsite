@@ -7,28 +7,20 @@
 }
 
 .SportItem{
-  min-width: 280px;
-  width: 45%;
-  padding: 5px;
+  max-width: 550px;
+  padding: 10px;
+  flex-grow: 1;
 }
 
 .Sport-grid-container {
   display: grid;
-  grid-template-areas:
-  'img name date'
-  'img desc desc';
+  grid-template-areas:'img name date';
   grid-gap: 10px;
-  grid-template-columns: 1fr 7fr;
-  grid-template-rows: 20px 80px;
-  padding: 5px;
+  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-rows: 80px;
   margin: auto;
-  margin-top: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.5);
-}
-  
-.Sport-grid-container > div {
-  padding: 5px 0;
 }
 
 .SportName{
@@ -41,12 +33,12 @@
 
 .SportImage{  
     grid-area: img; 
-    width: 100px;
-    width: 100px;
+    width: 100%;
+    padding: 5px;
     margin: auto; 
 }
 
 .SportDate{
   grid-area: date; 
-  padding: 10px;
+  margin: auto; 
 }

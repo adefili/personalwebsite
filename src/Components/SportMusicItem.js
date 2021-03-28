@@ -1,10 +1,8 @@
 import React from 'react';
-import {config, Spring} from 'react-spring/renderprops';
 import VizSensor from 'react-visibility-sensor';
-import {animated} from 'react-spring/renderprops'
 import logo from './../Img/libreria.jpg';
 
-class SportItem extends React.Component{
+class SportMusicItem extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -27,7 +25,7 @@ class SportItem extends React.Component{
             <div class="SportItem">
             <VizSensor onChange={this.onVisible} active={!this.state.isVisible} partialVisibility={true}>
             <div class="Sport-grid-container">
-                <img src={logo} alt="IMG" class="SportImage" />
+                <img src={this.props.img} alt="IMG" class="SportImage" />
                 <div class="SportName">{this.props.name}</div>
                 <div class="SportDate">{this.props.date}</div>
             </div>
@@ -37,7 +35,7 @@ class SportItem extends React.Component{
     }
 }
 
-export default SportItem;
+export default SportMusicItem;
 
 /*
                   immediate={this.state.stop}

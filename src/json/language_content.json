@@ -1,4 +1,8 @@
 {
+    "title":{
+        "it": "Lingue",
+        "en": "Languages"
+    },
     "languages":[
         {
             "language": "Italiano",
@@ -27,7 +31,7 @@
                     "value": 4.2
                 },
                 {
-                    "name": "comprehension",
+                    "name": "Listening",
                     "value": 5.3
                 }
             ]

@@ -4,7 +4,7 @@ import MyTimeline from './Components/MyTimeline';
 import GraphVisualization from './Components/GraphVisualization';
 import MyParticels from './Components/MyParticels';
 import Language from './Components/Language';
-import Sport from './Components/Sport';
+import SportMusic from './Components/SportMusic';
 import Project from './Components/Project';
 import BurgerMenu from './Components/BurgerMenu';
 import TestAnimation from './Components/TestAnimation';
@@ -22,6 +22,7 @@ class AllComponents extends React.Component {
     this.graphRef = React.createRef();
     this.projectRef = React.createRef();
     this.menuRef = React.createRef();
+    this.sportMusicRef = React.createRef();
     this.updateLanguage = this.updateLanguage.bind(this);
   }
 
@@ -32,6 +33,7 @@ class AllComponents extends React.Component {
     this.graphRef.current.changeText(lan);
     this.projectRef.current.changeText(lan);
     this.menuRef.current.changeText(lan);
+    this.sportMusicRef.current.changeText(lan);
   }
 
   render() {
@@ -51,7 +53,7 @@ class AllComponents extends React.Component {
             <div id="scroll5"></div>
             <Language />
             <div id="scroll6"></div>
-            <Sport />
+            <SportMusic ref={this.sportMusicRef} language={this.state.language}/>
           </div>
       </div>
     );

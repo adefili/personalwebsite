@@ -1,0 +1,72 @@
+{
+    "title":{
+        "it": "Musica & Sport",
+        "en": "Music & Sport"
+    },
+    "item":[
+        {
+            "name": {
+                "en": "Singing",
+                "it": "Canto"
+            },
+            "date": "2021 - now",
+            "img": "https://res.cloudinary.com/dzdgpwtox/image/upload/w_450,c_scale/v1608456933/designer-tool-uploads/bucket_3501/1608456938379.png" 
+        },
+        {
+            "name": {
+                "en": "Electric Bass Guitar",
+                "it": "Basso Elettrico"
+            },
+            "date": "2019 - now",
+            "img": "https://images.equipboard.com/uploads/category/image/147/bass-guitars.png" 
+        },
+        {
+            "name": {
+                "en": "Wing Tsun Kung Fu",
+                "it": "Wing Tsun Kung Fu"
+            },
+            "date": "2018 - now",
+            "img": "https://lh3.googleusercontent.com/proxy/u7seIW8zz9ncuMQ5OPDtrszZAaLxn1yUF2sGJTfr9h9X_OFTV7I0vX1u1LrB0BdU7mcM6dnTE0x209BMHjuPTGwqJ7_XW3NN1FuyVLyL-Mc" 
+        },
+        {
+            "name": {
+                "en": "Triathlon",
+                "it": "Triathlon"
+            },
+            "date": "2013",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Triathlon_pictogram.svg/1200px-Triathlon_pictogram.svg.png" 
+        },
+        {
+            "name": {
+                "en": "Mixing & recording",
+                "it": "Missaggio & registrazione"
+            },
+            "date": "2011 - now",
+            "img": "https://www.stars-music.com/images/static/cms/guides/icon-mixeur.png" 
+        },
+        {
+            "name": {
+                "en": "Electric Guitar",
+                "it": "Chitarra Elettrica"
+            },
+            "date": "2009 - now",
+            "img": "https://icon-library.com/images/icon-guitar/icon-guitar-11.jpg" 
+        },
+        {
+            "name": {
+                "en": "Water Polo",
+                "it": "Palla Nuoto"
+            },
+            "date": "2008 - 2011",
+            "img": "https://lh3.googleusercontent.com/proxy/LF4yveS4pUjFETuudEImGmoxbCvA-3KP4VwJe00p0Sv2uS7QtBRfTnoA6Lk8XPIIhYJVxwKyuSbQPb2Cj04EUsEpqSexzjsFRYfoGzYNGpE2nLybx5NLmqrQuQwbEnQzBUF2Cyby1ONVZ4qQYO0" 
+        },
+        {
+            "name": {
+                "en": "Keyboards",
+                "it": "Tastiere"
+            },
+            "date": "2005 - now",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/RB_keyboard_icon.svg/768px-RB_keyboard_icon.svg.png" 
+        }
+    ]
+}

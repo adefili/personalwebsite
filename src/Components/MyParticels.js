@@ -84,7 +84,7 @@ class MyParticels extends React.Component {
                   enable: true,
                   outMode: "bounce",
                   random: false,
-                  speed: 1.5,
+                  speed: 2,
                   straight: false,
                 },
                 number: {
@@ -92,7 +92,7 @@ class MyParticels extends React.Component {
                     enable: true,
                     value_area: 300,
                   },
-                  value: 10,
+                  value: 9,
                 },
                 opacity: {
                   value: 1,
