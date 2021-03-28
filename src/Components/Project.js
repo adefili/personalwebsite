@@ -28,7 +28,7 @@ class Project extends React.Component{
 
         return (
             <div className="paper">
-                <div className="jumboTitle" >Projects</div>   
+                <div className="jumboTitle" >{text.title[this.state.language]}</div>   
                 <div className="Project">
                     {items}
                 </div>

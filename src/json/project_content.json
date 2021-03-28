@@ -1,4 +1,8 @@
 {
+   "title": {
+      "en": "Projects",
+      "it": "Progetti"
+   },
    "projects": [
       {
          "name": {
@@ -6,8 +10,8 @@
            "en":"This Website"  
          },
          "description": {
-            "it":"Per la mia tesi di laurea ho implementato il Framework di ragionamento logico “Event Calculus” utilizzando PROLOG esteso con constraint Handling Rules (CHR). Questo framework permette di dedurre lo stato di un sistema data una narrativa di eventi. Attualmente risulta l’implementazione più performante in contesti dinamici oltre ad essere puramente logica (non fa uso di costrutti non logici ed è matematicamente dimostrabile)",
-            "en":"For my degree thesis I implementato the “Event Calculus“ logical reasoning framework using PROLOG extended with constraint Handling Rules (CHR). This framework allows to deduce the state of a system given a narrative of events. Currently it is the most performing implementation in dynamic contexts as well as being purely logical (it does not use non-logical constructs and is mathematically demonstrable)"  
+            "it":"Ho realizzato questo sito per imparare ad usare React e per migliorare nello sviluppo web",
+            "en":"I created this site to learn how to use React and to improve in web development"  
          },
          "tags": ["React","JS","HTML","CSS"],
          "image": "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
